@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="Currency_full_Name">
+        <item>United Arab Emirates Dirham</item>
+        <item>Afghan Afghani</item>
+        <item>Albanian Lek</item>
+        <item>Armenian Dram</item>
+        <item>Netherlands Antillean Guilder</item>
+        <item>Angolan Kwanza</item>
+        <item>Argentine Peso</item>
+        <item>Australian Dollar</item>
+        <item>Aruban Florin</item>
+        <item>Azerbaijani Manat</item>
+        <item>Bosnia-Herzegovina Convertible Mark</item>
+        <item>Barbadian Dollar</item>
+        <item>Bangladeshi Taka</item>
+        <item>Bulgarian Lev</item>
+        <item>Bahraini Dinar</item>
+        <item>Burundian Franc</item>
+        <item>Bermudan Dollar</item>
+        <item>Brunei Dollar</item>
+        <item>Bolivian Boliviano</item>
+        <item>Brazilian Real</item>
+        <item>Bahamian Dollar</item>
+        <item>Bitcoin</item>
+        <item>Bhutanese Ngultrum</item>
+        <item>Botswanan Pula</item>
+        <item>Belarusian Ruble</item>
+        <item>New Belarusian Ruble</item>
+        <item>Belize Dollar</item>
+        <item>Canadian Dollar</item>
+        <item>Congolese Franc</item>
+        <item>Swiss Franc</item>
+        <item>Chilean Unit of Account (UF)</item>
+        <item>Chilean Peso</item>
+        <item>Chinese Yuan</item>
+        <item>Colombian Peso</item>
+        <item>Costa Rican Colón</item>
+        <item>Cuban Convertible Peso</item>
+        <item>Cuban Peso</item>
+        <item>Cape Verdean Escudo</item>
+        <item>Czech Republic Koruna</item>
+        <item>Djiboutian Franc</item>
+        <item>Danish Krone</item>
+        <item>Dominican Peso</item>
+        <item>Algerian Dinar</item>
+        <item>Egyptian Pound</item>
+        <item>Eritrean Nakfa</item>
+        <item>Ethiopian Birr</item>
+        <item>Euro</item>
+        <item>Fijian Dollar</item>
+        <item>Falkland Islands Pound</item>
+        <item>British Pound Sterling</item>
+        <item>Georgian Lari</item>
+        <item>Guernsey Pound</item>
+        <item>Ghanaian Cedi</item>
+        <item>Gibraltar Pound</item>
+        <item>Gambian Dalasi</item>
+        <item>Guinean Franc</item>
+        <item>Guatemalan Quetzal</item>
+        <item>Guyanaese Dollar</item>
+        <item>Hong Kong Dollar</item>
+        <item>Honduran Lempira</item>
+        <item>Croatian Kuna</item>
+        <item>Haitian Gourde</item>
+        <item>Hungarian Forint</item>
+        <item>Indonesian Rupiah</item>
+        <item>Israeli New Sheqel</item>
+        <item>Manx pound</item>
+        <item>Indian Rupee</item>
+        <item>Iraqi Dinar</item>
+        <item>Iranian Rial</item>
+        <item>Icelandic Króna</item>
+        <item>Jersey Pound</item>
+        <item>Jamaican Dollar</item>
+        <item>Jordanian Dinar</item>
+        <item>Japanese Yen</item>
+        <item>Kenyan Shilling</item>
+        <item>Kyrgystani Som</item>
+        <item>Cambodian Riel</item>
+        <item>Comorian Franc</item>
+        <item>North Korean Won</item>
+        <item>South Korean Won</item>
+        <item>Kuwaiti Dinar</item>
+        <item>Cayman Islands Dollar</item>
+        <item>Kazakhstani Tenge</item>
+        <item>Laotian Kip</item>
+        <item>Lebanese Pound</item>
+        <item>Sri Lankan Rupee</item>
+        <item>Liberian Dollar</item>
+        <item>Lesotho Loti</item>
+        <item>Lithuanian Litas</item>
+        <item>Latvian Lats</item>
+        <item>Libyan Dinar</item>
+        <item>Moroccan Dirham</item>
+        <item>Moldovan Leu</item>
+        <item>Malagasy Ariary</item>
+        <item>Macedonian Denar</item>
+        <item>Myanma Kyat</item>
+        <item>Mongolian Tugrik</item>
+        <item>Macanese Pataca</item>
+        <item>Mauritanian Ouguiya</item>
+        <item>Mauritian Rupee</item>
+        <item>Maldivian Rufiyaa</item>
+        <item>Malawian Kwacha</item>
+        <item>Mexican Peso</item>
+        <item>Malaysian Ringgit</item>
+        <item>Mozambican Metical</item>
+        <item>Namibian Dollar</item>
+        <item>Nigerian Naira</item>
+        <item>Nicaraguan Córdoba</item>
+        <item>Norwegian Krone</item>
+        <item>Nepalese Rupee</item>
+        <item>New Zealand Dollar</item>
+        <item>Omani Rial</item>
+        <item>Panamanian Balboa</item>
+        <item>Peruvian Nuevo Sol</item>
+        <item>Papua New Guinean Kina</item>
+        <item>Philippine Peso</item>
+        <item>Pakistani Rupee</item>
+        <item>Polish Zloty</item>
+        <item>Paraguayan Guarani</item>
+        <item>Qatari Rial</item>
+        <item>Romanian Leu</item>
+        <item>Serbian Dinar</item>
+        <item>Russian Ruble</item>
+        <item>Rwandan Franc</item>
+        <item>Saudi Riyal</item>
+        <item>Solomon Islands Dollar</item>
+        <item>Seychellois Rupee</item>
+        <item>Sudanese Pound</item>
+        <item>Swedish Krona</item>
+        <item>Singapore Dollar</item>
+        <item>Saint Helena Pound</item>
+        <item>Sierra Leonean Leone</item>
+        <item>Somali Shilling</item>
+        <item>Surinamese Dollar</item>
+        <item>São Tomé and Príncipe Dobra</item>
+        <item>Salvadoran Colón</item>
+        <item>Syrian Pound</item>
+        <item>Swazi Lilangeni</item>
+        <item>Thai Baht</item>
+        <item>Tajikistani Somoni</item>
+        <item>Turkmenistani Manat</item>
+        <item>Tunisian Dinar</item>
+        <item>Tongan Paʻanga</item>
+        <item>Turkish Lira</item>
+        <item>Trinidad and Tobago Dollar</item>
+        <item>New Taiwan Dollar</item>
+        <item>Tanzanian Shilling</item>
+        <item>Ukrainian Hryvnia</item>
+        <item>Ugandan Shilling</item>
+        <item>United States Dollar</item>
+        <item>Uruguayan Peso</item>
+        <item>Uzbekistan Som</item>
+        <item>Venezuelan Bolívar Fuerte</item>
+        <item>Vietnamese Dong</item>
+        <item>Vanuatu Vatu</item>
+        <item>Samoan Tala</item>
+        <item>CFA Franc BEAC</item>
+        <item>Silver (troy ounce)</item>
+        <item>Gold (troy ounce)</item>
+        <item>East Caribbean Dollar</item>
+        <item>Special Drawing Rights</item>
+        <item>CFA Franc BCEAO</item>
+        <item>CFP Franc</item>
+        <item>Yemeni Rial</item>
+        <item>South African Rand</item>
+        <item>Zambian Kwacha (pre-2013)</item>
+        <item>Zambian Kwacha</item>
+        <item>Zimbabwean Dollar</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </array>
+    <array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </array>
+    <array name="currency_symbol_array">
+        <item>AED</item>
+        <item>AFN</item>
+        <item>ALL</item>
+        <item>AMD</item>
+        <item>ANG</item>
+        <item>AOA</item>
+        <item>ARS</item>
+        <item>AUD</item>
+        <item>AWG</item>
+        <item>AZN</item>
+        <item>BAM</item>
+        <item>BBD</item>
+        <item>BDT</item>
+        <item>BGN</item>
+        <item>BHD</item>
+        <item>BIF</item>
+        <item>BMD</item>
+        <item>BND</item>
+        <item>BOB</item>
+        <item>BRL</item>
+        <item>BSD</item>
+        <item>BTC</item>
+        <item>BTN</item>
+        <item>BWP</item>
+        <item>BYR</item>
+        <item>BYN</item>
+        <item>BZD</item>
+        <item>CAD</item>
+        <item>CDF</item>
+        <item>CHF</item>
+        <item>CLF</item>
+        <item>CLP</item>
+        <item>CNY</item>
+        <item>COP</item>
+        <item>CRC</item>
+        <item>CUC</item>
+        <item>CUP</item>
+        <item>CVE</item>
+        <item>CZK</item>
+        <item>DJF</item>
+        <item>DKK</item>
+        <item>DOP</item>
+        <item>DZD</item>
+        <item>EGP</item>
+        <item>ERN</item>
+        <item>ETB</item>
+        <item>EUR</item>
+        <item>FJD</item>
+        <item>FKP</item>
+        <item>GBP</item>
+        <item>GEL</item>
+        <item>GGP</item>
+        <item>GHS</item>
+        <item>GIP</item>
+        <item>GMD</item>
+        <item>GNF</item>
+        <item>GTQ</item>
+        <item>GYD</item>
+        <item>HKD</item>
+        <item>HNL</item>
+        <item>HRK</item>
+        <item>HTG</item>
+        <item>HUF</item>
+        <item>IDR</item>
+        <item>ILS</item>
+        <item>IMP</item>
+        <item>INR</item>
+        <item>IQD</item>
+        <item>IRR</item>
+        <item>ISK</item>
+        <item>JEP</item>
+        <item>JMD</item>
+        <item>JOD</item>
+        <item>JPY</item>
+        <item>KES</item>
+        <item>KGS</item>
+        <item>KHR</item>
+        <item>KMF</item>
+        <item>KPW</item>
+        <item>KRW</item>
+        <item>KWD</item>
+        <item>KYD</item>
+        <item>KZT</item>
+        <item>LAK</item>
+        <item>LBP</item>
+        <item>LKR</item>
+        <item>LRD</item>
+        <item>LSL</item>
+        <item>LTL</item>
+        <item>LVL</item>
+        <item>LYD</item>
+        <item>MAD</item>
+        <item>MDL</item>
+        <item>MGA</item>
+        <item>MKD</item>
+        <item>MMK</item>
+        <item>MNT</item>
+        <item>MOP</item>
+        <item>MRO</item>
+        <item>MUR</item>
+        <item>MVR</item>
+        <item>MWK</item>
+        <item>MXN</item>
+        <item>MYR</item>
+        <item>MZN</item>
+        <item>NAD</item>
+        <item>NGN</item>
+        <item>NIO</item>
+        <item>NOK</item>
+        <item>NPR</item>
+        <item>NZD</item>
+        <item>OMR</item>
+        <item>PAB</item>
+        <item>PEN</item>
+        <item>PGK</item>
+        <item>PHP</item>
+        <item>PKR</item>
+        <item>PLN</item>
+        <item>PYG</item>
+        <item>QAR</item>
+        <item>RON</item>
+        <item>RSD</item>
+        <item>RUB</item>
+        <item>RWF</item>
+        <item>SAR</item>
+        <item>SBD</item>
+        <item>SCR</item>
+        <item>SDG</item>
+        <item>SEK</item>
+        <item>SGD</item>
+        <item>SHP</item>
+        <item>SLL</item>
+        <item>SOS</item>
+        <item>SRD</item>
+        <item>STD</item>
+        <item>SVC</item>
+        <item>SYP</item>
+        <item>SZL</item>
+        <item>THB</item>
+        <item>TJS</item>
+        <item>TMT</item>
+        <item>TND</item>
+        <item>TOP</item>
+        <item>TRY</item>
+        <item>TTD</item>
+        <item>TWD</item>
+        <item>TZS</item>
+        <item>UAH</item>
+        <item>UGX</item>
+        <item>USD</item>
+        <item>UYU</item>
+        <item>UZS</item>
+        <item>VEF</item>
+        <item>VND</item>
+        <item>VUV</item>
+        <item>WST</item>
+        <item>XAF</item>
+        <item>XAG</item>
+        <item>XAU</item>
+        <item>XCD</item>
+        <item>XDR</item>
+        <item>XOF</item>
+        <item>XPF</item>
+        <item>YER</item>
+        <item>ZAR</item>
+        <item>ZMK</item>
+        <item>ZMW</item>
+        <item>ZWL</item>
+    </array>
+    <array name="default_colors">
+        <item>@color/color1</item>
+        <item>@color/color2</item>
+        <item>@color/color3</item>
+        <item>@color/color4</item>
+        <item>@color/color5</item>
+        <item>@color/color6</item>
+        <item>@color/color7</item>
+        <item>@color/color8</item>
+        <item>@color/color9</item>
+        <item>@color/color10</item>
+        <item>@color/color11</item>
+        <item>@color/color12</item>
+        <item>@color/color13</item>
+        <item>@color/color14</item>
+        <item>@color/color15</item>
+    </array>
+    <array name="preloaded_fonts">
+        <item>@font/alegreya_sans_sc_light</item>
+        <item>@font/open_sans</item>
+    </array>
+</resources>

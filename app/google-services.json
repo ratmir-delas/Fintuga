@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "604046092043",
+    "firebase_url": "https://fintuga-e8fc5-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fintuga-e8fc5",
+    "storage_bucket": "fintuga-e8fc5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604046092043:android:74ff8607c1262f2688e40e",
+        "android_client_info": {
+          "package_name": "com.tugasoft.fintuga"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604046092043-ti59ahuvmii7mumeighova6ggsbj4qci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tugasoft.fintuga",
+            "certificate_hash": "c69e61a40a9ce8fa965b451dd43e515a39510e27"
+          }
+        },
+        {
+          "client_id": "604046092043-9rgrgu7dlv9dm8icj6gqeeab18vfbjkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP0KyJoiUaBvXV-9o04IM1mVaxd2HEbOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604046092043-9rgrgu7dlv9dm8icj6gqeeab18vfbjkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

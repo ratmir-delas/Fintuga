@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fintuga Expanse Manager</string>
+
+    <!--TODO: it contain ads are on or off if on then "true" otherwise "false"-->
+    <bool name="isBanner">true</bool>
+    <bool name="isInterstitial">true</bool>
+    <bool name="isNative">true</bool>
+    <bool name="isAppOpen">true</bool>
+    <bool name="isReward">true</bool>
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="nativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="interstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="appOpenId" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
+    <string name="rewardId" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="color_expens_acc_loan" translatable="false">\#00bcd4</string>
+    <string name="color_expens_donation" translatable="false">\#2196f3</string>
+    <string name="color_expens_fees" translatable="false">\#3f51b5</string>
+    <string name="color_expens_food" translatable="false">\#03a9f4</string>
+    <string name="color_expens_groceries" translatable="false">\#f44336</string>
+    <string name="color_expens_medical" translatable="false">\#009688</string>
+    <string name="color_expens_rent" translatable="false">\#e91e63</string>
+    <string name="color_expens_shopping" translatable="false">\#673ab7</string>
+    <string name="color_expens_transportation" translatable="false">\#9c27b0</string>
+    <string name="color_income_coupon" translatable="false">\#FFCC00</string>
+    <string name="color_income_income_from_rent" translatable="false">\#8bc34a</string>
+    <string name="color_income_interest" translatable="false">\#cddc39</string>
+    <string name="color_income_pension" translatable="false">\#ffeb3b</string>
+    <string name="color_income_salary" translatable="false">\#4caf50</string>
+    <string name="color_income_tax_return" translatable="false">\#ff9800</string>
+    <string name="color_income_work_on_demand" translatable="false">\#ffc107</string>
+
+    <string name="currency">Currency</string>
+
+    <!--  ###############################################  -->
+
+
+    <string name="about_us">About Us</string>
+    <string name="action_cancel">CANCEL</string>
+    <string name="action_go_settings">GOTO SETTINGS</string>
+    <string name="action_got_it">Got It</string>
+    <string name="action_no">NO</string>
+    <string name="action_ok">OK</string>
+    <string name="action_re_login">Re-login</string>
+    <string name="action_retry">RE-TRY</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_update">UPDATE</string>
+    <string name="action_yes">YES</string>
+    <string name="ad">AD</string>
+
+    <string name="addExpense_hint">There is no transactions to show, Please add your transactions.</string>
+    <string name="add_categories">Add Categories</string>
+    <string name="add_unlimited_income_expense_categories">Add unlimited income / expense categories</string>
+    <string name="add_unlimited_number_of_banks">Add unlimited number of banks</string>
+
+    <string name="ads_free">ADs free</string>
+    <string name="ads_free_exp">ADS</string>
+    <string name="alert">Alert</string>
+    <string name="all_country_currency_conversions">All Country Currency Conversions</string>
+    <string name="amount">Amount*</string>
+    <string name="amount_in_currency">Amount in Different Currency</string>
+    <string name="annual_interest_rate">Annual Interest rate*</string>
+    <string name="folderName">Expanse Manager</string>
+
+    <string name="apr_2019">April2019</string>
+    <string name="are_you_eligible">Are you Eligible for the Loan</string>
+    <string name="atm_finder">Atm Finder</string>
+    <string name="bank_calc">Banking Calculations</string>
+    <string name="bank_finder">Bank Finder</string>
+    <string name="banking_calculations">Banking Calculations:</string>
+
+    <string name="be_the_kind">"Be the king of your app
+without any distraction
+of ads and pop ups"</string>
+    <string name="blance">Balance</string>
+
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="btn_create_account">Create Account</string>
+    <string name="calc">Calculate</string>
+    <string name="category_wise_summary">Category Wise Summary</string>
+
+
+    <string name="chip_text">Chip text</string>
+    <string name="chooseplan">Choose a plan</string>
+    <string name="clear_text_end_icon_content_description">Clear text</string>
+
+    <string name="colorpicker_dialog_cancel">CANCEL</string>
+    <string name="colorpicker_dialog_ok">ADD</string>
+    <string name="colorpicker_dialog_title">Choose Color</string>
+
+
+    <string name="compare">Compare Loan</string>
+    <string name="compare_loans">Compare Loans</string>
+    <string name="compound_in">Simple &amp; Compound</string>
+    <string name="con">Continue</string>
+    <string name="congratulations">"Congratulations! Now you can access all premium features for 24Hrs"</string>
+    <string name="connect_internet">Connect to Internet</string>
+    <string name="convert">CONVERT</string>
+    <string name="convert_pdf">Convert PDF</string>
+    <string name="currency_amount">Currency of the Amount</string>
+    <string name="currency_conversion">Currency Conversion</string>
+    <string name="currency_converter">Currency Conversion</string>
+    <string name="currency_rate">1 %1$s = %2$s %3$s</string>
+    <string name="currency_symbol">Currency Symbol</string>
+    <string name="currencyreward">Watch Video AD to access currency converter</string>
+    <string name="date_12_jan_2021">Date: 12 Jan 2021</string>
+    <string name="date_of_sip">Date of SIP:</string>
+    <string name="date_of_swp">Date of SWP:</string>
+    <string name="days">3 days free trial</string>
+
+    <string name="difference">Difference :</string>
+    <string name="discount">save</string>
+    <string name="emi">EMI</string>
+    <string name="emi_calc">Financial Calculator</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="emi_for">EMI you are eligible for</string>
+    <string name="emi_loan">Emi of the loan</string>
+    <string name="emi_monthly">EMI (Monthly Payement)</string>
+    <string name="end_date">End Date</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enter_bank_name">Enter Bank Name</string>
+    <string name="enter_currency">Enter Currency</string>
+    <string name="enteramount">Enter Amount</string>
+    <string name="entercurrency">Enter Currency</string>
+    <string name="equity">Equity Linked Saving</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exit">Are you sure want to exit ?</string>
+    <string name="exp_rate">Expected Rate of Interest*</string>
+    <string name="expense">EXPENSE</string>
+    <string name="expense_manager">Expense Manager</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="facebook_application_id" />
+    <string name="facebook_login_protocol_scheme" />
+    <string name="fcm_fallback_notification_channel_label">Miscellaneous</string>
+    <string name="fd">FD</string>
+    <string name="find_places">Find Places</string>
+    b
+    <string name="first_emi">First EMI:</string>
+    <string name="for_latest">For latest Calculation</string>
+    <string name="freeexperience">Free Experience</string>
+    <string name="friday">Fri</string>
+    <string name="fui_accessibility_logo">App logo</string>
+    <string name="fui_auto_verified">Phone number automatically verified</string>
+    <string name="fui_button_text_save">Save</string>
+    <string name="fui_button_text_send">Send</string>
+    <string name="fui_cancel">Cancel</string>
+    <string name="fui_confirm_recovery_body">Follow the instructions sent to %1$s to recover your password.</string>
+    <string name="fui_continue">Continue</string>
+    <string name="fui_default_toolbar_title">@string/app_name</string>
+    <string name="fui_email_account_creation_error">Email account registration unsuccessful</string>
+    <string name="fui_email_field_name">email_field</string>
+    <string name="fui_email_hint">Email</string>
+    <string name="fui_email_link_confirm_email_header">Confirm email</string>
+    <string name="fui_email_link_confirm_email_message">Confirm email to continue sign in</string>
+    <string name="fui_email_link_cross_device_linking_text">"You originally intended to connect %1$s to your email account but have opened the link on a different device where you are not signed in.
+
+If you still want to connect your %1$s account, open the link on the same device where you started sign-in. Otherwise, tap Continue to sign-in on this device."</string>
+    <string name="fui_email_link_cross_device_sign_in_button_text">Sign in with %1$s</string>
+    <string name="fui_email_link_different_anonymous_user_header">Session ended</string>
+    <string name="fui_email_link_different_anonymous_user_message">The session associated with this sign-in request has either expired or was cleared.</string>
+    <string name="fui_email_link_dismiss_button">Dismiss</string>
+    <string name="fui_email_link_email_sent">A sign-in email with additional instructions was sent to %1$s. Check your email to complete sign-in.</string>
+    <string name="fui_email_link_header">"Sign-in email sent
+"</string>
+    <string name="fui_email_link_invalid_link_header">Unable to complete sign in</string>
+    <string name="fui_email_link_invalid_link_message">The action code is invalid. This can happen if the code is malformed, expired, or has already been used.</string>
+    <string name="fui_email_link_resend">Resend</string>
+    <string name="fui_email_link_trouble_getting_email_header">Trouble getting email?</string>
+    <string name="fui_email_link_trouble_getting_email_resend_solution">"If the steps above didn't work, you can resend the email. Note that this will deactivate the link in the older email."</string>
+    <string name="fui_email_link_trouble_getting_possible_fixes">"Try these common fixes:
+• Check if the email was marked as spam or filtered.
+• Check your internet connection.
+• Check that you did not misspell your email.
+• Check that your inbox space is not running out or other inbox setting related issues.
+"</string>
+    <string name="fui_email_link_wrong_device_header">New device or browser detected.</string>
+    <string name="fui_email_link_wrong_device_message">Try opening the link using the same device or browser where you started the sign-in process.</string>
+    <string name="fui_enter_confirmation_code">Enter the 6-digit code we sent to</string>
+    <string name="fui_error_email_does_not_exist">"That email address doesn't match an existing account"</string>
+    <string name="fui_error_invalid_password">Incorrect password.</string>
+    <string name="fui_error_quota_exceeded">There was a problem verifying your phone number</string>
+    <string name="fui_error_session_expired">This code is no longer valid</string>
+    <string name="fui_error_too_many_attempts">This phone number has been used too many times</string>
+    <string name="fui_error_unknown">An unknown error occurred.</string>
+    <string name="fui_idp_name_email">Email</string>
+    <string name="fui_idp_name_facebook">Facebook</string>
+    <string name="fui_idp_name_github">GitHub</string>
+    <string name="fui_idp_name_google">Google</string>
+    <string name="fui_idp_name_phone">Phone</string>
+    <string name="fui_idp_name_twitter">Twitter</string>
+    <string name="fui_incorrect_code_dialog_body">Wrong code. Try again.</string>
+    <string name="fui_invalid_email_address">"That email address isn't correct"</string>
+    <string name="fui_invalid_phone_number">Enter a valid phone number</string>
+    <string name="fui_missing_email_address">Enter your email address to continue</string>
+    <string name="fui_missing_first_and_last_name">Please enter a first and last name.</string>
+    <string name="fui_name_hint">First &amp; last name</string>
+    <string name="fui_new_password_hint">New password</string>
+    <string name="fui_next_default">Next</string>
+    <string name="fui_no_internet">Network error, check your internet connection.</string>
+    <string name="fui_password_hint">Password</string>
+    <string name="fui_password_recovery_body">Get instructions sent to this email that explain how to reset your password.</string>
+    <string name="fui_phone_hint">Phone Number</string>
+    <string name="fui_privacy_policy">Privacy Policy</string>
+    <string name="fui_progress_dialog_checking_accounts">Checking for existing accounts…</string>
+    <string name="fui_progress_dialog_loading">Loading…</string>
+    <string name="fui_progress_dialog_sending">Sending…</string>
+    <string name="fui_progress_dialog_signing_in">Signing in…</string>
+    <string name="fui_progress_dialog_signing_up">Signing up…</string>
+    <string name="fui_required_field">"You can't leave this empty."</string>
+    <string name="fui_resend_code">Resend Code</string>
+    <string name="fui_resend_code_in">Resend code in 0:%02d</string>
+    <string name="fui_sign_in_anonymously">Continue as guest</string>
+    <string name="fui_sign_in_default">Sign in</string>
+    <string name="fui_sign_in_with_apple">Sign in with Apple</string>
+    <string name="fui_sign_in_with_email">Sign in with email</string>
+    <string name="fui_sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="fui_sign_in_with_github">Sign in with GitHub</string>
+    <string name="fui_sign_in_with_google">Sign in with Google</string>
+    <string name="fui_sign_in_with_microsoft">Sign in with Microsoft</string>
+    <string name="fui_sign_in_with_phone">Sign in with phone</string>
+    <string name="fui_sign_in_with_phone_number">Sign in with phone number</string>
+    <string name="fui_sign_in_with_twitter">Sign in with Twitter</string>
+    <string name="fui_sign_in_with_yahoo">Sign in with Yahoo</string>
+    <string name="fui_sms_terms_of_service">By tapping “%1$s”, an SMS may be sent. Message &amp; data rates may apply.</string>
+    <string name="fui_sms_terms_of_service_and_privacy_policy_extended">By tapping “%1$s”, you are indicating that you accept our %2$s and %3$s. An SMS may be sent. Message &amp; data rates may apply.</string>
+    <string name="fui_terms_of_service">Terms of Service</string>
+    <string name="fui_title_confirm_recover_password">Check your email</string>
+    <string name="fui_title_recover_password_activity">Recover password</string>
+    <string name="fui_title_register_email">Sign up</string>
+    <string name="fui_title_welcome_back_idp_prompt">@string/fui_sign_in_default</string>
+    <string name="fui_title_welcome_back_password_prompt">@string/fui_sign_in_default</string>
+    <string name="fui_tos_and_pp">By continuing, you are indicating that you accept our %1$s and %2$s.</string>
+    <string name="fui_tos_and_pp_footer">%1$s     %2$s</string>
+    <string name="fui_trouble_signing_in">Trouble signing in?</string>
+    <string name="fui_verify_phone_number">Verify Phone Number</string>
+    <string name="fui_verify_phone_number_title">Enter your phone number</string>
+    <string name="fui_verify_your_phone_title">Verify your phone number</string>
+    <string name="fui_verifying">Verifying…</string>
+    <string name="fui_welcome_back_email_header">Welcome back!</string>
+    <string name="fui_welcome_back_email_link_header">"You already have an account
+"</string>
+    <string name="fui_welcome_back_email_link_prompt_body">"You've already used %1$s. You can connect your %2$s account with %1$s by signing in with email link below.
+
+For this flow to successfully connect your %2$s account with this email, you have to open the link on the same device or browser."</string>
+    <string name="fui_welcome_back_idp_header">You already have an account</string>
+    <string name="fui_welcome_back_idp_prompt">"You've already used %1$s. Sign in with %2$s to continue."</string>
+    <string name="fui_welcome_back_password_prompt_body">"You've already used %1$s to sign in. Enter your password for that account."</string>
+    <!-- <string name="gcm_defaultSenderId">329555102020</string>-->
+    <string name="get_ads">Get ADs Free Version</string>
+    <string name="get_an_access">"Get an access
+to the ad- free app"</string>
+    <string name="get_it">Get it</string>
+    <string name="getpremium">Get Premium</string>
+    <string name="gross_monthly">Gross Monthly Income*</string>
+    <string name="gst_amount">GST Amount</string>
+    <string name="half_yearly">Half Yearly</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="history">HISTORY</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="images">IMAGES</string>
+    <string name="income_caps">INCOME</string>
+    <string name="interest">Interest*</string>
+
+    <string name="investmentAmount">Investment Amount*</string>
+    <string name="investment_amount">Investment Amount</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="label_account_verification">"Account
+Verification"</string>
+    <string name="label_balance">BALANCE</string>
+    <string name="label_bullet">•</string>
+    <string name="label_choose_currency">CHOOSE CURRENCY</string>
+    <string name="label_create_account">"Create
+Account"</string>
+    <string name="label_dont_have_an_account">"Don't have an Account?"</string>
+    <string name="label_email">Email</string>
+    <string name="label_expense">EXPENSE</string>
+    <string name="label_expense_type_donation">DONATION</string>
+    <string name="label_expense_type_fees">FEES</string>
+    <string name="label_expense_type_food">FOOD &amp; DRINK</string>
+    <string name="label_expense_type_groceries">GROCERIES</string>
+    <string name="label_expense_type_loan">LOANS</string>
+    <string name="label_expense_type_medical">MEDICAL</string>
+    <string name="label_expense_type_rent">RENT</string>
+    <string name="label_expense_type_shopping">SHOPPING</string>
+    <string name="label_expense_type_transportation">TRANSPORTATION</string>
+    <string name="label_forgot_password">Forgot Password?</string>
+    <string name="label_income">INCOME</string>
+    <string name="label_income_type_coupon">COUPON</string>
+    <string name="label_income_type_income_from_rent">INCOME FROM RENT</string>
+    <string name="label_income_type_interest">INTEREST</string>
+    <string name="label_income_type_pension">PENSION</string>
+    <string name="label_income_type_salary">SALARY</string>
+    <string name="label_income_type_tax_return">TAX RETURN</string>
+    <string name="label_income_type_work_on_demand">WORK ON DEMAND</string>
+    <string name="label_month">MONTH</string>
+    <string name="label_password">Password</string>
+    <string name="label_please_do_sign_in_to_proceed">Please do your account verification in to proceed.</string>
+    <string name="label_privacy_policy"><u>Privacy Policy</u></string>
+    <string name="label_update_account">"Update
+Account"</string>
+    <string name="label_welcome">Welcome,</string>
+    <string name="label_welcome_dashboard">Welcome, %1$s</string>
+    <string name="label_year">YEAR</string>
+    <string name="last_date">Loan Last Date</string>
+    <string name="lifetime">Lifetime</string>
+    <string name="lifetimepay">Get premium benefits for lifetime by paying onetime payment.</string>
+    <string name="loan_1">LOAN 1</string>
+    <string name="loan_2">LOAN 2</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="loan_calc">Loan Calculations</string>
+    <string name="loan_calculations">Loan Calculations:</string>
+    <string name="loan_eligi_rules">"Loan eligibility is calculated using the FOIR system, Thus can vary with different banks.
+
+It's the estimated calculation "</string>
+    <string name="loan_eligibility">Loan Eligibility</string>
+    <string name="loan_eligible_for">Loan Amount you are Eligible for</string>
+    <string name="loan_tenure">Loan Tenure*</string>
+    <string name="lumpsum">Lumpsum Calculator</string>
+    <string name="making_all_finance">"Making all type
+of calculations easy and
+simple"</string>
+
+    <string name="maturityDate">Maturity Date</string>
+    <string name="maturity_amount">Maturity Amount</string>
+    <string name="maturity_value">Maturity Value</string>
+    <string name="menu_item_broadcast_notification">Broadcast Notification</string>
+    <string name="menu_item_download">Downloads</string>
+    <string name="menu_item_feedback">Feedback</string>
+    <string name="menu_item_interstitial_ad_OFF">Interstitial Ad (OFF)</string>
+    <string name="menu_item_interstitial_ad_ON">Interstitial Ad (ON)</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="menu_item_more">More</string>
+    <string name="menu_item_more_apps">More Apps</string>
+    <string name="menu_item_profile">Profile</string>
+    <string name="menu_item_rate_us">Rate Us</string>
+    <string name="menu_item_share">Share</string>
+    <string name="menu_item_subscribe">Subscribe</string>
+    <string name="message_required_permission">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="monday">Mon</string>
+    <string name="month">Month</string>
+    <string name="monthly">Monthly</string>
+    <string name="monthly_withdrawl">Monthly Withdrawal Amount*</string>
+    <string name="more_apps">More Apps</string>
+    <string name="mostpopular">Most Popular</string>
+    <string name="msg_alert_change_date">Your phone date is inaccurate! Adjust your clock and try again.</string>
+    <string name="msg_alert_confirm_logout">Are you sure want to Logout from application?</string>
+    <string name="msg_alert_connection">Please connect with active network connection and Try again.</string>
+
+    <string name="mutual_funds_amp_sip">Mutual Funds &amp; SIP:</string>
+    <string name="mutual_sip">Mutual Funds &amp; SIP</string>
+    <string name="name">NAME</string>
+
+    <string name="nav_item_calendar">CALENDAR</string>
+    <string name="nav_item_chart">CHART</string>
+    <string name="nav_item_home">HOME</string>
+    <string name="nav_item_report">REPORT</string>
+    <string name="navigation_drawer_close">close</string>
+    <string name="navigation_drawer_open">open</string>
+    <string name="net_amount">Net Amount</string>
+    <string name="no">No</string>
+    <string name="noads">No Ads</string>
+    <string name="nopersons">No of Persons</string>
+    <string name="not_now">Not Now</string>
+    <string name="note_use_the_same_google_account_for_purchase_any_plan">( Use the same google account for purchase any plan throughout application. )</string>
+    <string name="offline_notification_text">Tap to open ad</string>
+    <string name="offline_notification_title">View the ad you saved when you were offline</string>
+    <string name="offline_opt_in_confirm">OK</string>
+    <string name="offline_opt_in_confirmation">"You'll get a notification with the link when you're back online"</string>
+    <string name="offline_opt_in_decline">No thanks</string>
+    <string name="offline_opt_in_message">"We'll send you a notification with a link to the advertiser site."</string>
+    <string name="offline_opt_in_title">"Open ad when you're back online."</string>
+    <string name="ok">Okay</string>
+    <string name="onedaypremium">Watch Video AD &amp; Get 1 day premium</string>
+    <string name="onemonth">Monthly</string>
+    <string name="our_life">Our life is a loan received from death</string>
+    <string name="password_toggle_content_description">Show password</string>
+
+    <string name="pay">Get Premium</string>
+    <string name="please_wait_fetching_details">Please Wait Fetching Details</string>
+    <string name="ppf">PPF</string>
+    <string name="ppf_calc">PPF Calculator</string>
+    <string name="premium">Premium</string>
+    <string name="premium_benifits">Premium Benefits:</string>
+    <string name="principal_2000">Principal : 2000$</string>
+    <string name="principl">Principal</string>
+    <string name="principl_amount">Principal Amount*</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <!-- <string name="project_id">expense-manager-f735e</string>-->
+    <string name="quarterly">Quarterly</string>
+    <string name="rate_of_interest">Rate of Interest*</string>
+    <string name="rate_of_tax">Rate of Tax*</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="rd_calc">RD</string>
+    <string name="reminder_me">Reminder Me</string>
+
+    <string name="saturday">Sat</string>
+    <string name="save">Save 48%</string>
+    <string name="save_as">SAVE AS</string>
+    <string name="SavingActivity">SAVING</string>
+    <string name="saving_date">Saving Date:</string>
+    <string name="savings">Savings</string>
+    <string name="search_menu_title">Search</string>
+    <string name="set_reminder">Set Reminder</string>
+    <string name="set_reminder_time">Set Reminder Time</string>
+    <string name="share_app">Share the app</string>
+    <string name="share_result">Share Result</string>
+    <string name="share_the_app">Share the app</string>
+    <string name="show_report">Show Report</string>
+    <string name="signUp_email">Email</string>
+    <string name="signUp_fullName">Full Name</string>
+    <string name="signUp_password">Password</string>
+    <string name="simple_compound">Simple &amp; Compound Interest</string>
+    <string name="simple_compound_new">Simple &amp; Compound</string>
+    <string name="sip">SIP</string>
+    <string name="sip_invest">Systematic Investment Plan</string>
+    <string name="sixmonths">Six Months</string>
+    <string name="skipandcontinue">Skip &amp; Continue with ADS</string>
+    <string name="split">Split</string>
+    <string name="splitbill">Split Your Bill:</string>
+    <string name="start_date">Start Date</string>
+    <string name="statistics">Statistics</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="subs_title">How subscription payment works?</string>
+    <string name="subscriptionpolicy">"The subscription will automatically charged after the trial period ends or the subscription end, unless you cancel your subscription at least 24 hours before the renewal date.
+ 
+ Lifetime payment will charge only one time, it is not subscription mode to renew. 
+ 
+ You can cancel your subscription through your Google Play account settings or it will automatically renew. 
+"</string>
+    <string name="sunday">Sun</string>
+    <string name="swp">SWP</string>
+    <string name="sys_withdraw">Systematic Withdrawal Plan</string>
+    <string name="tax">Tax</string>
+    <string name="tax_calc">Tax Calculator</string>
+    <string name="tax_calculator">Tax Calculator</string>
+    <string name="tenure">Tenure*</string>
+    <string name="thursday">Thu</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_alert_confirm_logout">Logout</string>
+    <string name="title_alert_connection">Connection Error</string>
+    <string name="title_alert_date">Date</string>
+    <string name="title_more">Expense Manager</string>
+    <string name="title_required_permission">Need Permissions</string>
+    <string name="toast_empty_values">Email and Password fields cannot be empty</string>
+    <string name="toast_loginFailed">Authentication failed</string>
+    <string name="toast_signup_empty_values">User details cannot be empty</string>
+    <string name="toast_signup_success">User has been created</string>
+    <string name="total_amount">Total Payment Amount</string>
+    <string name="total_amount_tax">Total Amount</string>
+    <string name="total_int">Total Interest</string>
+    <string name="total_invest_value">Total Interest Value</string>
+    <string name="total_investment">Total Investment Amount</string>
+    <string name="total_month_emi">Total Monthly EMI</string>
+    <string name="total_payment">Total Payement/n(Principal + Interest)</string>
+    <string name="total_principle">Total Principal</string>
+    <string name="transactions">TRANSACTIONS</string>
+    <string name="tuesday">Tue</string>
+    <string name="type_of_interest">Type of Interest</string>
+    <string name="unlimited_currency_conversions">Unlimited Currency Conversions</string>
+    <string name="unlimited_transactions">Add unlimited transactions in Expense Manager</string>
+    <string name="unlockall">Unlock all premium features</string>
+    <string name="update_currency_symbol">Update currency symbol</string>
+    <string name="use">use</string>
+    <string name="view_in_details">View in Details</string>
+    <string name="watch_video_ad">Watch Video AD</string>
+    <string name="we_will_reminds_you_to_make_entries_of_your_transactions">We will reminds you to make entries of your transactions.</string>
+    <string name="wednesday">Wed</string>
+    <string name="welcom_app">"Welcome to full proof
+financial calculator app "</string>
+    <string name="with_sleep">with sleep as the daily interst on loan</string>
+    <string name="yearly">Yearly</string>
+    <string name="yes">Yes</string>
+
+    <string name="add_expense">Add Expense</string>
+    <string name="add_income">Add Income</string>
+    <string name="amount_caps">AMOUNT:</string>
+    <string name="category_caps">CATEGORY</string>
+    <string name="date_label_add">Data do SWP:</string>
+    <string name="description_optional">DESCRIPTION (Optional)</string>
+    <string name="done">DONE</string>
+    <string name="date_caps">DATE:</string>
+    <string name="enter_amount_required">Enter Amount (required)</string>
+    <string name="enter_amount_of_expense">Enter Value of Expense</string>
+    <string name="enter_valid_amount">Enter Valid Amount</string>
+    <string name="enter_valid_values">Insira o Valor Válido</string>
+    <string name="payment_mode_caps">PAYMENT MODE</string>
+    <string name="set_currency_symbol">Set currency symbol</string>
+    <string name="expanse">Expanse</string>
+    <string name="income">Income</string>
+    <string name="select_month">Select months</string>
+    <string name="select_months">Select months</string>
+    <string name="select_quarter">Select quarter</string>
+    <string name="select_half_year">Select semester</string>
+    <string name="select_year">Select year</string>
+    <string name="max_30_years">(max 30 years)</string>
+    <string name="no_category_added">No categories added yet. Please add some category by tapping on bottom icon.</string>
+
+    <!---  months  -->
+    <string name="jan">Jan</string>
+    <string name="feb">Feb</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Apr</string>
+    <string name="may">May</string>
+    <string name="jun">Jun</string>
+    <string name="jul">Jul</string>
+    <string name="aug">Aug</string>
+    <string name="sep">Sep</string>
+    <string name="oct">Oct</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dec</string>
+
+
+
+</resources>

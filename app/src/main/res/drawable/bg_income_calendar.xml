@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/colorIncomeBackground" />
+    <padding
+        android:bottom="@dimen/dimen_three"
+        android:left="@dimen/dimen_three"
+        android:right="@dimen/dimen_three"
+        android:top="@dimen/dimen_three" />
+    <corners android:radius="@dimen/dimen_three" />
+</shape>

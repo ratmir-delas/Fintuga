@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginLeft="8.0dip"
+    android:layout_marginRight="8.0dip"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/item_event_header"
+            android:layout_width="fill_parent"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/event_header_padding_bottom">
+
+            <TextView
+                android:id="@+id/item_event_header_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/item_event_header_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="8.0dip"
+                android:textColor="#ffff6378" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_event_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/custom_past_event_background"
+            android:orientation="vertical"
+            android:padding="8.0dip">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="?selectableItemBackgroundBorderless">
+
+                <TextView
+                    android:id="@+id/item_timesheet_time_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:text="From - To"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+
+                <RelativeLayout
+                    android:id="@+id/llCustomer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/item_timesheet_time_range"
+                    android:layout_marginTop="5.0dip">
+
+                    <ImageView
+                        android:id="@+id/imvCustomer"
+                        android:layout_width="30.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_customer" />
+
+                    <TextView
+                        android:id="@+id/item_customer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/imvCustomer"
+                        android:background="@drawable/custom_past_event"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/llWorkArea"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llCustomer"
+                    android:layout_marginTop="5.0dip">
+
+                    <ImageView
+                        android:id="@+id/imvWorkArea"
+                        android:layout_width="30.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_work_area" />
+
+                    <TextView
+                        android:id="@+id/item_work_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/imvWorkArea"
+                        android:background="@drawable/custom_past_event"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llWorkArea"
+                    android:layout_marginTop="5.0dip">
+
+                    <ImageView
+                        android:id="@+id/imvDesc"
+                        android:layout_width="30.0dip"
+                        android:layout_height="25.0dip"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/ic_description" />
+
+                    <TextView
+                        android:id="@+id/item_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="8.0dip"
+                        android:layout_toRightOf="@+id/imvDesc"
+                        android:textColor="@android:color/black"
+                        android:textSize="14.0sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

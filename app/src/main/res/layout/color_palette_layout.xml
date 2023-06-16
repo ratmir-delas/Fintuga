@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/colorpicker_base"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/ll_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dialog_top_design"
+                android:orientation="vertical"
+                android:paddingLeft="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingBottom="35.0dip">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_ten"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?actionBarSize"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="center_vertical"
+                        android:text="Add Expense Category"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14.0sp"
+                        android:textStyle="bold" />
+
+                    <com.polyak.iconswitch.IconSwitch
+                        android:id="@+id/icon_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="?actionBarSize"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="10dp"
+                        app:isw_active_tint_icon_left="@color/white"
+                        app:isw_active_tint_icon_right="@color/white"
+                        app:isw_background_color="#EDC7FB"
+                        app:isw_default_selection="left"
+                        app:isw_icon_left="@drawable/ic_minus_circle_big"
+                        app:isw_icon_right="@drawable/ic_plus_circle_big"
+                        app:isw_inactive_tint_icon_left="#75ffffff"
+                        app:isw_inactive_tint_icon_right="#75ffffff"
+                        app:isw_thumb_color_left="#FC495B"
+                        app:isw_thumb_color_right="#09B838" />
+
+                    <TextView
+                        android:id="@+id/tv_body"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title"
+                        android:layout_marginTop="10.0dip"
+                        android:text="Please enter expense category.\nExe. Food &amp; Drink,Transportation which are responsible for expenses are comes under EXPENSE."
+                        android:textColor="@android:color/white"
+                        android:textSize="12.0sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/et_category"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_body"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/dimen_ten"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_transparent"
+                        android:hint="Enter category"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:textAllCaps="true"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:textSize="14.0sp"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_header"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingRight="10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/color_palette"
+                    android:layout_alignLeft="@+id/color_palette"
+                    android:layout_marginBottom="10.0dip"
+                    android:text="@string/colorpicker_dialog_title"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/color_palette"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/btn_shape"
+                    android:padding="10dp" />
+
+                <LinearLayout
+                    android:id="@+id/buttons_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/color_palette"
+                    android:layout_alignStart="@+id/color_palette"
+                    android:layout_alignLeft="@+id/color_palette"
+                    android:layout_alignEnd="@+id/color_palette"
+                    android:layout_alignRight="@+id/color_palette"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/negative"
+                        style="@style/ActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/btn_shape"
+                        android:padding="10dp"
+                        android:text="@string/colorpicker_dialog_cancel"
+                        android:textColor="@color/white" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/positive"
+                        style="@style/ActionButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5.0dip"
+                        android:layout_marginLeft="5.0dip"
+                        android:background="@drawable/btn_shape"
+                        android:padding="10dp"
+                        android:text="@string/colorpicker_dialog_ok"
+                        android:textColor="@color/lite_blue" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

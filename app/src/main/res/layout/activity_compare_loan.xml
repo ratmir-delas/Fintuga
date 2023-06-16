@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/light_pink">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_pink"
+        android:theme="@style/AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:navigationIcon="@drawable/ic_back_ios"
+            app:popupTheme="@style/PopupOverlay"
+            app:titleTextColor="@color/black" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/appbar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="18dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/header_drawable"
+                                android:fontFamily="@font/lato_regular"
+                                android:gravity="center"
+                                android:text="@string/loan_1"
+                                android:textColor="#ff000000"
+                                android:textSize="15.0sp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/header_drawable"
+                                android:fontFamily="@font/lato_regular"
+                                android:gravity="center"
+                                android:text="@string/loan_2"
+                                android:textColor="#ff000000"
+                                android:textSize="15.0sp" />
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:fontFamily="@font/lato_medium"
+                        android:text="@string/principl_amount"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/principalamoount1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="9.0"
+                                    android:gravity="center"
+                                    android:padding="4.0dip"
+                                    android:text="€"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/principalamoount2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="9.0"
+                                    android:gravity="center"
+                                    android:padding="4.0dip"
+                                    android:text="€"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:fontFamily="@font/lato_medium"
+                            android:text="@string/interest"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:fontFamily="@font/open_sans"
+                            android:text="(max 50% per annum)"
+                            android:textSize="10.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/interestamoount1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="9.0"
+                                    android:gravity="center"
+                                    android:padding="4.0dip"
+                                    android:text="%"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/interestamoount2"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.0"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="9.0"
+                                    android:gravity="center"
+                                    android:padding="4.0dip"
+                                    android:text="%"
+                                    android:textColor="@color/black"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10.0dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:layout_marginBottom="10.0dip"
+                            android:fontFamily="@font/lato_medium"
+                            android:text="@string/loan_tenure"
+                            android:textColor="#ff000000"
+                            android:textSize="15.0sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10.0dip"
+                            android:fontFamily="@font/open_sans"
+                            android:text="(max 30yr)"
+                            android:textSize="10.0sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/tenure1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="5dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1.0"
+                                android:background="@drawable/my_card_design"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/tenure2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.0"
+
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="@font/open_sans"
+                                    android:hint="Enter Here..."
+                                    android:inputType="numberDecimal"
+                                    android:paddingStart="10dp"
+                                    android:textSize="16.0sp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <RadioGroup
+                        android:id="@+id/togle"
+                        android:layout_width="200dp"
+                        android:layout_height="40.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_weight="1.0"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/year"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/togglewidget"
+                            android:button="@null"
+                            android:checked="true"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:text="year"
+                            android:textColor="@color/fontBlackEnable"/>
+
+                        <RadioButton
+                            android:id="@+id/month"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/togglewidget"
+                            android:button="@null"
+                            android:checked="false"
+                            android:fontFamily="@font/open_sans"
+                            android:gravity="center"
+                            android:text="month"
+                            android:textColor="@color/fontBlackDisable"/>
+                    </RadioGroup>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/my_card_design"
+                            android:fontFamily="@font/lato_semi"
+                            android:onClick="calculate"
+                            android:paddingStart="10dp"
+                            android:paddingEnd="10dp"
+                            android:stateListAnimator="@null"
+                            android:text="@string/calc"
+                            android:textColor="@color/black"
+                            android:textSize="15.0sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admobcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    app:cardCornerRadius="10.0dip"
+                    app:cardElevation="10.0dip">
+
+                    <LinearLayout
+                        android:id="@+id/addd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/customeventnative_framelayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="30.0dip"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:background="@drawable/my_card_design"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/lato_medium"
+                                android:text="@string/emi"
+                                android:textColor="#ff000000"
+                                android:textSize="15.0sp" />
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 1:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+                                    <TextView
+                                        android:id="@+id/emi1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 2:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+                                    <TextView
+                                        android:id="@+id/emi2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="@string/difference"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/emidifference"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:background="@drawable/my_card_design"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/lato_medium"
+                                android:text="@string/total_int"
+                                android:textColor="#ff000000"
+                                android:textSize="15.0sp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 1:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/totalinterest1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 2:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/totalinterest2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="@string/difference"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+
+                                    <TextView
+                                        android:id="@+id/interestdifference"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.0"
+                            android:padding="10dp"
+                            android:background="@drawable/my_card_design"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/lato_medium"
+                                android:text="Total Payment"
+                                android:textColor="#ff000000"
+                                android:textSize="15.0sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/lato_medium"
+                                android:text="(Principal + Interest)"
+                                android:textSize="15.0sp" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 1:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalamount1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="Loan 2:"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+                                    <TextView
+                                        android:id="@+id/totalamount2"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="@string/difference"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+
+                                    <TextView
+                                        android:id="@+id/paymentdifference"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1.0"
+                                        android:fontFamily="@font/open_sans"
+                                        android:gravity="start"
+                                        android:text="0 €"
+                                        android:textColor="#ff000000"
+                                        android:textSize="15.0sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="5dp">
+
+                        <Button
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/my_card_design"
+                            android:fontFamily="@font/lato_semi"
+                            android:onClick="pdf"
+                            android:stateListAnimator="@null"
+                            android:text="@string/convert_pdf"
+                            android:textColor="@color/black"
+                            android:textSize="15.0sp" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

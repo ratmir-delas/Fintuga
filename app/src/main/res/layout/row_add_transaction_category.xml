@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:padding="@dimen/dimen_five">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_color"
+        android:layout_width="15.0dip"
+        android:layout_height="15.0dip"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/dimen_five"
+        android:src="@drawable/img_circle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/dimen_five"
+        android:layout_toEndOf="@+id/iv_color"
+        android:fontFamily="sans-serif"
+        android:text="Example chip"
+        android:textColor="@android:color/black"
+        android:textSize="14.0sp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="24.0dip"
+        android:layout_height="24.0dip"
+        android:layout_alignParentRight="true"
+        android:background="?selectableItemBackground"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_remove_circle"
+        android:tint="@color/black" />
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/stat"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:paddingLeft="20.0dip"
+    android:paddingTop="15.0dip"
+    android:paddingRight="20.0dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancel_action"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_cancle"
+            android:textColor="#ff191f3e"
+            android:textSize="20.0sp" />
+
+        <TextView
+            android:id="@+id/which"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Title"
+            android:textColor="@color/black"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10.0dip"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.0"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <Button
+                        android:id="@+id/Share"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/my_card_design"
+                        android:fontFamily="@font/lato_semi"
+                        android:gravity="center"
+                        android:text="@string/share_result"
+                        android:textColor="@color/black"
+                        android:textSize="13.0dip" />
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="5dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_card_design"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/months"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_medium"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/month"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/interest"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/open_sans"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_medium"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/interest"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Balance"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/lato_medium"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:text="@string/blance"
+                                android:textSize="17.0sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/nativead"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="15.0dip"
+                android:layout_marginRight="5.0dip"
+                android:layout_marginBottom="60.0dip"
+                android:background="@drawable/my_card_design"
+                android:orientation="vertical"
+                android:paddingLeft="20.0dip"
+                android:paddingTop="20.0dip"
+                android:paddingRight="20.0dip"
+                android:paddingBottom="20.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

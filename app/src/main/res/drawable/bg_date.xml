@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/outerRectangle">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/colorDivider" />
+            <corners android:radius="@dimen/dimen_three" />
+            <padding
+                android:bottom="1.0dip"
+                android:left="@dimen/dimen_five"
+                android:right="@dimen/dimen_five"
+                android:top="1.0dip" />
+        </shape>
+    </item>
+</layer-list>

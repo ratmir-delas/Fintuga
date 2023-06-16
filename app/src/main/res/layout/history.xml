@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300.0dip"
+    android:layout_height="500.0dip"
+    android:layout_gravity="center"
+    android:background="@drawable/my_solid_light_pink"
+    android:paddingLeft="10.0dip"
+    android:paddingTop="25.0dip"
+    android:paddingRight="10.0dip"
+    android:paddingBottom="25.0dip">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/my_card_design"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fontFamily="@font/lato_medium"
+                android:gravity="center"
+                android:text="@string/history"
+                android:textColor="#ff191f3e"
+                android:textSize="18.0sp" />
+
+            <ImageView
+                android:id="@+id/canceling"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="5dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selected_radio"
+                android:padding="5dp"
+                android:src="@drawable/ic_cancle"
+                app:tint="@color/black" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/no_history"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No History Found"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18.0sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/historyList"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_ID"
+        android:layout_marginTop="10.0dip"
+        android:padding="3.0dip" />
+</RelativeLayout>

@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/my_gradiant"
+    android:fitsSystemWindows="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize"
+                android:background="@drawable/toolbar_bg"
+                app:layout_scrollFlags="enterAlways|scroll"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_select_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableEnd="@drawable/ic_date_range_white_24dp"
+                    android:drawablePadding="@dimen/dimen_ten"
+                    android:drawableTint="@color/black"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20.0sp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:id="@+id/vg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10.0dip"
+                    android:orientation="horizontal"
+                    android:paddingRight="2.0dip">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tv_reports"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40.0dip"
+                        android:layout_marginRight="20.0dip"
+                        android:background="?selectableItemBackground"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/ic_baseline_report"
+                        android:drawablePadding="@dimen/dimen_ten"
+                        android:drawableTint="@color/black"
+                        android:gravity="center|right"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:textSize="20.0sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_total_amount"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:padding="5.0dip">
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_transaction_image"
+                        android:layout_height="@dimen/dimen_transaction_image"
+                        android:src="@drawable/ic_add_cir" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_three"
+                        android:fontFamily="@font/lato_semi"
+                        android:gravity="center_horizontal"
+                        android:text="@string/label_income"
+                        android:textColor="@android:color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_income"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_border2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_transaction_image"
+                        android:layout_height="@dimen/dimen_transaction_image"
+                        android:src="@drawable/ic_remove_circle"
+                        android:tint="@android:color/black" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_three"
+                        android:fontFamily="@font/lato_semi"
+                        android:gravity="center_horizontal"
+                        android:text="@string/label_expense"
+                        android:textColor="@android:color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_expense"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_border2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_transaction_image"
+                        android:layout_height="@dimen/dimen_transaction_image"
+                        android:src="@drawable/ic_equal"
+                        android:tint="@android:color/black" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_three"
+                        android:fontFamily="@font/lato_semi"
+                        android:gravity="center_horizontal"
+                        android:text="@string/label_balance"
+                        android:textColor="@android:color/black"
+                        android:textSize="12.0sp" />
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_total_saving"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_border2"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/navigation"
+            android:layout_below="@+id/ll_total_amount"
+            android:background="@drawable/fragment_background">
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp" />
+        </FrameLayout>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:foreground="?selectableItemBackground"
+            android:visibility="gone"
+            app:itemBackground="@android:color/white"
+            app:itemIconTint="@drawable/selector_bottombar_item"
+            app:itemTextColor="@drawable/selector_bottombar_item"
+            app:menu="@menu/bottom_navigation_purchased" />
+
+        <LinearLayout
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/rl_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/homeNavigationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_a_img_c" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_calendar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/calendarNavigationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_b_img" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_analytics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/analyticsNavigationIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_analytics_img" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/navigation"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="end|bottom|center"
+            android:layout_margin="@dimen/fab_margin"
+            android:backgroundTint="@color/floatACTbtn"
+            android:elevation="0.0dip"
+            android:src="@drawable/ic_add"
+            android:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/toggle_switch_chart"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/navigation"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/toggle_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/date_and_time_bg"
+                android:gravity="center"
+                android:text="Expanse"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/toggle_b"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/date_and_time_bg"
+                android:gravity="center"
+                android:text="Income"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <belka.us.androidtoggleswitch.widgets.ToggleSwitch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/navigation"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="end|bottom|center"
+            android:layout_margin="@dimen/fab_margin"
+            android:textSize="12.0sp"
+            android:visibility="gone"
+            app:activeBgColor="@color/colorPrimaryDark"
+            app:activeTextColor="@android:color/white"
+            app:inactiveBgColor="@color/colorDivider"
+            app:inactiveTextColor="@android:color/black"
+            app:separatorColor="@color/colorPrimaryDark"
+            app:textToggleLeft="@string/label_expense"
+            app:textToggleRight="@string/label_income"
+            app:toggleWidth="100.0dip" />
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

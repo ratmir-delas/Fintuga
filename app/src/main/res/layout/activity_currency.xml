@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ff191f3e">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:background="?colorPrimary"
+            app:layout_scrollFlags="enterAlways|scroll"
+            app:popupTheme="@style/PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/mainlinear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="0.0dip"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="10.0dip"
+                    android:background="@drawable/innershape"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="20.0dip"
+                        android:layout_marginBottom="10.0dip"
+                        android:fontFamily="@font/lato_medium"
+                        android:text="@string/amount"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="20.0dip"
+                        android:background="@drawable/innershape"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/amount"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/editbox_bg"
+                            android:ems="10"
+                            android:fontFamily="@font/open_sans"
+                            android:inputType="numberDecimal"
+                            android:padding="4.0dip"
+                            android:textSize="16.0sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10.0dip"
+                        android:fontFamily="@font/lato_medium"
+                        android:text="@string/currency_amount"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginTop="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="30.0dip"
+                        android:background="@drawable/innershape"
+                        android:backgroundTint="@color/dashboard"
+                        android:fontFamily="@font/open_sans"
+                        android:padding="3.0dip"
+                        android:textSize="15.0sp" />
+
+                    <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="40.0dip"
+                        android:layout_marginLeft="10.0dip"
+                        android:layout_marginRight="10.0dip"
+                        android:layout_marginBottom="30.0dip"
+                        android:background="@drawable/buttonshape"
+                        android:fontFamily="@font/lato_semi"
+                        android:onClick="calculate"
+                        android:text="@string/calc"
+                        android:textColor="#ffffffff"
+                        android:textSize="15.0sp" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admobcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="320.0dip"
+                    android:layout_marginStart="20.0dip"
+                    android:layout_marginEnd="20.0dip"
+                    app:cardCornerRadius="10.0dip"
+                    app:cardElevation="10.0dip">
+
+                    <LinearLayout
+                        android:id="@+id/addd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/customeventnative_framelayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="300.0dip"
+                    android:layout_marginLeft="20.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginRight="20.0dip"
+                    android:layout_marginBottom="30.0dip"
+                    android:background="@drawable/innershape"
+                    android:orientation="vertical"
+                    android:padding="20.0dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20.0dip"
+                        android:fontFamily="@font/lato_medium"
+                        android:gravity="center"
+                        android:text="@string/amount_in_currency"
+                        android:textColor="#ff000000"
+                        android:textSize="15.0sp" />
+
+                    <ListView
+                        android:id="@+id/currency"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginBottom="30.0dip"
+                        android:background="#ffffffff" />
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30.0dip"
+                        android:layout_gravity="right"
+                        android:layout_marginBottom="10.0dip"
+                        android:fontFamily="@font/open_sans"
+                        android:text="As per date   14/5/2020"
+                        android:textSize="10.0sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>
