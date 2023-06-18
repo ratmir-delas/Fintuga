@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250.0dip"
+    android:layout_height="320.0dip"
+    android:layout_gravity="center"
+    android:background="@drawable/my_solid_light_pink"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="25.0dip">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/my_card_design"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fontFamily="@font/lato_medium"
+            android:gravity="center"
+            android:text="@string/save_as"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20.0sp" />
+
+        <ImageView
+            android:id="@+id/canceling"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="right"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/selected_radio"
+            android:src="@drawable/ic_cancle"
+            android:padding="5dp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="90.0dip"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginTop="10.0dip"
+        android:layout_marginRight="5.0dip"
+        android:layout_weight="5.0"
+        android:src="@drawable/ic_folder" />
+
+    <EditText
+        android:id="@+id/naming"
+        android:layout_width="150.0dip"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.0dip"
+        android:singleLine="true"
+        android:hint="Write File Name..."
+        android:background="@drawable/editbox_bg"
+        android:fontFamily="@font/lato_regular"
+        android:textColor="@color/colorPrimaryDark"
+        android:textCursorDrawable="@color/colorPrimaryDark"
+        android:textSize="16.0dip" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="5dp">
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/my_card_design"
+        android:fontFamily="@font/open_sans"
+        android:onClick="calculate"
+        android:stateListAnimator="@null"
+        android:text="@string/save"
+        android:textColor="@color/black"
+        android:textSize="15.0sp" />
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

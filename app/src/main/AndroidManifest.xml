@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:name="com.tugasoft.fintuga.application.AppCore"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:preserveLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.tugasoft.fintuga.activity.ShowPDFActivity"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name="com.tugasoft.fintuga.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tugasoft.fintuga.MainActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.TransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tugasoft.fintuga.tools.SwpCalculatorActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.tools.CompareLoanActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.tools.FdCalculatorActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.tools.SimpleAndCompoundActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.tools.CurrencyConverterActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.tools.EmiCalculatorActivity"
+            android:screenOrientation="locked"
+            android:theme="@style/AppTheme.TransparentTheme" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/xml" />
+        </provider>
+
+        <activity
+            android:name="com.tugasoft.fintuga.activity.ExpenseManagerLoadingActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category
+                    android:name="android.intent.category.DEFAULT"
+                    android:screenOrientation="locked" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tugasoft.fintuga.activity.FirebaseAuthenticationActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.activity.MoreActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.activity.DashboardActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.activity.AddTransactionCategoryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+
+        <activity
+            android:name="com.tugasoft.fintuga.activity.DownloadsActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+        <activity
+            android:name="com.tugasoft.fintuga.activity.ReportActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/ExpenseTheme" />
+        <activity android:name="com.tugasoft.fintuga.currencyConverter.Ui.MainActivity" />
+        <activity
+            android:name="com.tugasoft.fintuga.currencyConverter.Ui.RateListActivity"
+            android:theme="@style/AppTheme" />
+
+        <service
+            android:name="com.tugasoft.fintuga.service.SendFCMNotificationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name="com.tugasoft.fintuga.receiver.AlarmReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:theme="@style/Dexter.Internal.Theme.Transparent" />
+        <activity
+            android:name="com.firebase.ui.auth.ui.provider.GitHubLoginActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

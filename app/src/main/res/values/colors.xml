@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="accent_material_dark">@color/material_deep_teal_200</color>
+    <color name="accent_material_light">@color/material_deep_teal_500</color>
+    <color name="androidx_core_ripple_material_light">#1f000000</color>
+    <color name="androidx_core_secondary_text_default_material_light">#8a000000</color>
+    <color name="backgroundContentColor">#ff000000</color>
+    <color name="background_floating_material_dark">@color/material_grey_800</color>
+    <color name="background_floating_material_light">@android:color/white</color>
+    <color name="background_material_dark">@color/material_grey_850</color>
+    <color name="background_material_light">@color/material_grey_50</color>
+    <color name="black">#000000</color>
+    <color name="black_de">#ff000000</color>
+    <color name="blue">#ff123256</color>
+    <color name="pink">#D572FB</color>
+    <color name="light_pink">#F2CFFF</color>
+    <color name="light_pink_bg">#F9E9FF</color>
+    <color name="myRed">#FC495B</color>
+    <color name="myGreen">#09B838</color>
+    <color name="floatACTbtn">#9437F2</color>
+    <color name="testColor">#000000</color>
+
+    <color name="button_material_dark">#ff5a595b</color>
+    <color name="button_material_light">#ffd6d7d7</color>
+    <color name="calendar_day_text_color">#ffa4b5d2</color>
+    <color name="calendar_number_text_color">#ff000000</color>
+    <color name="calendar_time_sheet_not_filled_color">#ff000000</color>
+
+    <color name="color1">#ff2062af</color>
+    <color name="color10">#ff8c47fb</color>
+    <color name="color11">#ff51c1ee</color>
+    <color name="color12">#ff8cc453</color>
+    <color name="color13">#ffc2987d</color>
+    <color name="color14">#ffce7777</color>
+    <color name="color15">#ff9086ba</color>
+    <color name="color2">#ff58aeb7</color>
+    <color name="color3">#fff4b528</color>
+    <color name="color4">#ffdd3e48</color>
+    <color name="color5">#ffbf89ae</color>
+    <color name="color6">#ff5c88be</color>
+    <color name="color7">#ff59bc10</color>
+    <color name="color8">#ffe87034</color>
+    <color name="color9">#fff84c44</color>
+    <color name="colorAccent">#ff03dac5</color>
+    <color name="colorBalance">@color/colorAccent</color>
+    <color name="colorChipSelected">#ffdbdbdb</color>
+    <color name="colorDivider">#ffdbdbdb</color>
+    <color name="colorExpense">#ffca2b33</color>
+    <color name="colorExpenseBackground">#fff8dddc</color>
+    <color name="colorGray">#ff878887</color>
+    <color name="colorIncome">#ff00746e</color>
+    <color name="colorIncomeBackground">#ffdbf5dd</color>
+    <color name="colorLightGray">#ffece8e8</color>
+    <color name="colorLightWhite">#e6ffffff</color>
+    <color name="colorPrimary">#ffffffff</color>
+    <color name="colorPrimaryDark">#ff191f3e</color>
+    <color name="colorPrimaryDark_expense">#ff191f3e</color>
+    <color name="colorPrimaryLight">#ffe57373</color>
+    <color name="colorPrimaryText">#ff212121</color>
+    <color name="colorPrimary_expense">#ff191f3e</color>
+    <color name="colorReportTab">#ff2196f3</color>
+    <color name="colorSecondaryText">#ff757575</color>
+    <color name="colorTransparent">#25FFFFFF</color>
+    <color name="colorFullTransparent">#03FFFFFF</color>
+
+    <color name="dashboard">#ffeae8e3</color>
+
+
+    <color name="fontBlackDisable">#50000000</color>
+    <color name="fontBlackEnable">#ff000000</color>
+    <color name="fontWhiteDisable">#85ffffff</color>
+    <color name="fontWhiteEnable">#ffffffff</color>
+
+    <color name="fui_bgAnonymous">#fff4b400</color>
+    <color name="fui_bgEmail">#ffd0021b</color>
+    <color name="fui_bgFacebook">#ff3b5998</color>
+    <color name="fui_bgGitHub">#ff24292e</color>
+    <color name="fui_bgGoogle">#ffffffff</color>
+    <color name="fui_bgPhone">#ff43c5a5</color>
+    <color name="fui_bgTwitter">#ff5baaf4</color>
+    <color name="fui_buttonShadow">#64bebebe</color>
+    <color name="fui_linkColor">#ff4285f4</color>
+    <color name="fui_transparent">#00000000</color>
+    <color name="gray">#ff444444</color>
+    <color name="gray_light">#ffbbbbbb</color>
+    <color name="gray_very_light">#ffdddddd</color>
+    <color name="highlighted_text_material_dark">#6680cbc4</color>
+    <color name="highlighted_text_material_light">#66009688</color>
+    <color name="isw_defaultBg">#ff302f31</color>
+    <color name="lite_blue">#ff42a5f5</color>
+    <color name="material_blue_grey_800">#ff37474f</color>
+    <color name="material_blue_grey_900">#ff263238</color>
+    <color name="material_blue_grey_950">#ff21272b</color>
+    <color name="material_deep_teal_200">#ff80cbc4</color>
+    <color name="material_deep_teal_500">#ff008577</color>
+    <color name="material_grey_100">#fff5f5f5</color>
+    <color name="material_grey_300">#ffe0e0e0</color>
+    <color name="material_grey_50">#fffafafa</color>
+    <color name="material_grey_600">#ff757575</color>
+    <color name="material_grey_800">#ff424242</color>
+    <color name="material_grey_850">#ff303030</color>
+    <color name="material_grey_900">#ff212121</color>
+
+
+    <color name="purple_200">#ffb255f9</color>
+    <color name="purple_500">#ffb255f9</color>
+    <color name="purple_700">#ffb255f9</color>
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+    <color name="ripple_material_dark">#33ffffff</color>
+    <color name="ripple_material_light">#1f000000</color>
+
+    <color name="teal_200">#ff02acec</color>
+    <color name="teal_700">#ff02acec</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+    <color name="white">#ffffffff</color>
+</resources>

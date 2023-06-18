@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/light_pink">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"/>
+
+    <ProgressBar
+        android:id="@+id/myProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/pagerImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:layout_width="120.0dip"
+        android:layout_height="130.0dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/image_foreground"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingTop="5.0dip"
+        android:paddingEnd="5.0dip">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv_download"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_margin="@dimen/dimen_ten"
+            android:background="?selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:src="@drawable/ic_file_download_24dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="@dimen/dimen_eight">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/iv"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/img_expense"
+            android:tint="@android:color/white" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_ten">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_exp_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/tv_exp_amount"
+                android:text="Utility"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_exp_descr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_exp_category"
+                android:layout_alignStart="@+id/tv_exp_category"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/tv_exp_amount"
+                android:text=" Purchase Goods"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp"
+                android:textStyle="normal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_exp_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dimen_five"
+                android:gravity="right"
+                android:text="2500"
+                android:textColor="@android:color/white"
+                android:textSize="16.0sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

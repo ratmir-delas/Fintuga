@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/minDialogWidth"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_fifteen"
+    app:cardBackgroundColor="@android:color/white">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/et_currency"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_borders"
+        android:fontFamily="sans-serif"
+        android:hint="Currency Symbol"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLength="3"
+        android:padding="@dimen/dimen_fifteen"
+        android:paddingLeft="10dp"
+        android:paddingTop="2.5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2.5dp"
+        android:singleLine="true"
+        android:textColor="@color/colorPrimaryText"
+        android:textColorHint="@color/colorSecondaryText"
+        android:textSize="14.0sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:fontFamily="sans-serif"
+        android:text="Eg. $ , USD"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="14.0sp" />
+</LinearLayout>

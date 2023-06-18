@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/my_gradiant"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="15dp"
+                            android:text="NEXT"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+            -->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:minHeight="?actionBarSize"
+                app:navigationIcon="@drawable/ic_back_ios"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                app:titleTextAppearance="@style/ToolbarTitle"
+                app:titleTextColor="@color/black" />
+
+        </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_add_category"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?selectableItemBackground"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_gradient_background"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_ten">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_category_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/add_categories"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="16.0sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_category_title"
+                            android:layout_marginTop="@dimen/dimen_five"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/add_unlimited_income_expense_categories"
+                            android:textColor="@color/black"
+                            android:textSize="12.0sp" />
+
+                        <ImageView
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_forword" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_currency_symbol"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_gradient_background"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_ten">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_currency_symbol_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/currency_symbol"
+                            android:textColor="@color/black"
+                            android:textSize="16.0sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_currency_symbol_sub_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_currency_symbol_title"
+                            android:layout_marginTop="@dimen/dimen_five"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/update_currency_symbol"
+                            android:textColor="@color/black"
+                            android:textSize="12.0sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tv_currency_symbol"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="@dimen/dimen_five"
+                            android:layout_marginRight="5dp"
+                            android:layout_toStartOf="@+id/iv_next"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="$"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16.0sp" />
+
+                        <ImageView
+                            android:id="@+id/iv_next"
+                            android:layout_width="25.0dip"
+                            android:layout_height="25.0dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_forword" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:foreground="?selectableItemBackground"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="8dp">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_gradient_background"
+                        android:orientation="vertical"
+                        android:padding="@dimen/dimen_ten">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/set_reminder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16.0sp" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_ten"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_reminder_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/reminder_me"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="16.0sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_reminder_title"
+                                android:layout_marginTop="@dimen/dimen_five"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/we_will_reminds_you_to_make_entries_of_your_transactions"
+                                android:textColor="@color/colorSecondaryText"
+                                android:textSize="12.0sp" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switch_reminder"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:checked="true"
+                                android:thumb="@drawable/ic_thumb"
+                                app:trackTint="@color/pink" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rl_choose_reminder_time"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen_ten"
+                            android:background="?selectableItemBackground"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_reminder_time_title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:text="@string/set_reminder_time"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="16.0sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/tv_reminder_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_reminder_time_title"
+                                android:layout_marginTop="@dimen/dimen_five"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="@color/colorSecondaryText"
+                                android:textSize="12.0sp" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:layout_width="25.0dip"
+                                android:layout_height="25.0dip"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                app:srcCompat="@drawable/ic_time" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/admobcard"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_ten"
+                    android:layout_marginRight="@dimen/dimen_ten"
+                    android:layout_marginBottom="@dimen/dimen_ten"
+                    android:foreground="?selectableItemBackground"
+                    android:visibility="gone"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="@dimen/dimen_five"
+                    app:cardElevation="@dimen/dimen_five">
+
+                    <LinearLayout
+                        android:id="@+id/addd"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content">
+
+                        <FrameLayout
+                            android:id="@+id/customeventnative_framelayout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</LinearLayout>

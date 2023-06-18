@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Expanse Manager</string>
+
+    <string name="currency">Currency</string>
+
+    <string name="about_us">Sobre Nós</string>
+    <string name="action_cancel">CANCELAR</string>
+    <string name="action_go_settings">IR PARA DEFINIÇÕES</string>
+    <string name="action_got_it">Entendi</string>
+    <string name="action_no">NÃO</string>
+    <string name="action_ok">OK</string>
+    <string name="action_re_login">Re-login</string>
+    <string name="action_retry">TENTAR NOVAMENTE</string>
+    <string name="action_settings">Definições</string>
+    <string name="action_update">ATUALIZAR</string>
+    <string name="action_yes">SIM</string>
+    <string name="ad">ANÚNCIO</string>
+
+    <string name="addExpense_hint">Não há transações para mostrar, por favor, adicione suas transações.</string>
+    <string name="add_categories">Adicionar Categorias</string>
+    <string name="add_unlimited_income_expense_categories">Adicionar categorias ilimitadas de rendimento/despesas</string>
+    <string name="add_unlimited_number_of_banks">Adicionar número ilimitado de bancos</string>
+
+    <string name="ads_free">Sem anúncios</string>
+    <string name="ads_free_exp">ANÚNCIOS</string>
+    <string name="alert">Alerta</string>
+    <string name="all_country_currency_conversions">Conversões de moedas de todos os países</string>
+    <string name="amount">Quantia*</string>
+    <string name="amount_in_currency">Valor em Moeda Diferente</string>
+    <string name="annual_interest_rate">Taxa de juros anual*</string>
+    <string name="folderName">Gestor de Despesas</string>
+
+    <string name="apr_2019">Abril2019</string>
+    <string name="are_you_eligible">É elegível para o empréstimo</string>
+    <string name="atm_finder">Localizador de Atm</string>
+    <string name="bank_calc">Cálculos Bancários</string>
+    <string name="bank_finder">Localizador de Bancos</string>
+    <string name="banking_calculations">Cálculos Bancários:</string>
+
+    <string name="be_the_kind">"Seja o rei do seu aplicativo
+sem qualquer distração
+de anúncios e pop-ups"</string>
+    <string name="blance">Saldo</string>
+
+    <string name="bottomsheet_action_expand_halfway">Expandir a meio caminho</string>
+    <string name="btn_create_account">Criar Conta</string>
+    <string name="calc">Calcular</string>
+    <string name="category_wise_summary">Resumo Sábio da Categoria</string>
+
+
+    <string name="chip_text">Texto do chip</string>
+    <string name="chooseplan">Escolha um plano</string>
+    <string name="clear_text_end_icon_content_description">Limpar texto</string>
+    <string name="colorpicker_dialog_cancel">CANCELAR</string>
+    <string name="colorpicker_dialog_ok">ADICIONAR</string>
+    <string name="colorpicker_dialog_title">Escolher a cor</string>
+
+
+    <string name="compare">Compare Loan</string>
+    <string name="compare_loans">Comparar Empréstimos</string>
+    <string name="compound_in">Simples &amp; Composto</string>
+    <string name="con">Continuar</string>
+    <string name="congratulations">"Parabéns! Agora você pode acessar todos os recursos premium por 24 horas"</string>
+    <string name="connect_internet">Ligar à Internet</string>
+    <string name="convert">CONVERTER</string>
+    <string name="convert_pdf">Converter PDF</string>
+    <string name="currency_amount">Moeda do montante</string>
+    <string name="currency_conversion">Conversão de Moeda</string>
+    <!--  changed  -->
+    <string name="currency_converter">Conversor de moeda</string>
+    <string name="currency_rate">1 %1$s = %2$s %3$s</string>
+    <string name="currency_symbol">Símbolo da Moeda</string>
+    <string name="currencyreward">Assista ao vídeo AD para acessar o conversor de moeda</string>
+    <string name="date_12_jan_2021">Data: 12 jan 2021</string>
+    <string name="date_of_sip">Data do PIS:</string>
+    <string name="date_of_swp">Data do SWP:</string>
+    <string name="days">3 dias de teste gratuito</string>
+
+    <string name="difference">Diferença :</string>
+    <string name="discount">salvar</string>
+    <string name="emi">PCH</string>
+    <string name="emi_calc">Calculadora Financeira</string>
+    <string name="emi_calculator">Calculadora PCH</string>
+    <string name="emi_for">PCH para o qual é elegível</string>
+    <string name="emi_loan">PCH do empréstimo</string>
+    <string name="emi_monthly">PCH (Pagamento Mensal)</string>
+    <string name="end_date">Data de Fim</string>
+    <string name="enter_amount">Insira o valor</string>
+    <string name="enter_bank_name">Digite o nome do banco</string>
+    <string name="enter_currency">Insira a Moeda</string>
+    <string name="enteramount">Insira o valor</string>
+    <string name="entercurrency">Insira a Moeda</string>
+    <string name="equity">Poupança Ligada a Capitais Próprios</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="exit">Tem certeza de que deseja sair?</string>
+    <string name="exp_rate">Taxa de Juros Esperada*</string>
+    <string name="expense">DESPESA</string>
+    <string name="expense_manager">Gerente de Despesas</string>
+    <string name="exposed_dropdown_menu_content_description">Mostrar menu dropdown</string>
+    <string name="fab_transformation_scrim_behavior">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
+    <string name="fab_transformation_sheet_behavior">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
+    <string name="facebook_application_id" />
+    <string name="facebook_login_protocol_scheme" />
+    <string name="fcm_fallback_notification_channel_label">Diversos</string>
+    <string name="fd">FD</string>
+    <string name="find_places">Encontrar Locais</string>
+
+    <string name="first_emi">Primeiro PCH:</string>
+    <string name="for_latest">Para o cálculo mais recente</string>
+    <string name="freeexperience">Free Experience</string>
+    <string name="friday">Sex</string>
+    <string name="fui_accessibility_logo">Logotipo do aplicativo</string>
+    <string name="fui_auto_verified">Número de telefone verificado automaticamente</string>
+    <string name="fui_button_text_save">Salvar</string>
+    <string name="fui_button_text_send">Enviar</string>
+    <string name="fui_cancel">Cancelar</string>
+    <string name="fui_confirm_recovery_body">Siga as instruções enviadas para %1$s para recuperar sua senha.</string>
+    <string name="fui_continue">Continue</string>
+    <string name="fui_default_toolbar_title">@string/app_name</string>
+    <string name="fui_email_account_creation_error">Registro de conta de e-mail sem sucesso</string>
+    <string name="fui_email_field_name">email_field</string>
+    <string name="fui_email_hint">Email</string>
+    <string name="fui_email_link_confirm_email_header">Confirmar e-mail</string>
+    <string name="fui_email_link_confirm_email_message">Confirmar e-mail para continuar a iniciar sessão</string>
+    <string name="fui_email_link_cross_device_linking_text">"Você originalmente pretendia conectar %1$s à sua conta de e-mail, mas abriu o link em um dispositivo diferente onde você não está conectado.
+
+Se ainda quiser ligar a sua conta %1$s, abra a ligação no mesmo dispositivo onde iniciou o início de sessão. Caso contrário, toque em Continuar para iniciar sessão neste dispositivo."</string>
+    <string name="fui_email_link_cross_device_sign_in_button_text">Iniciar sessão com %1$s</string>
+    <string name="fui_email_link_different_anonymous_user_header">Sessão encerrada</string>
+    <string name="fui_email_link_different_anonymous_user_message">A sessão associada a este pedido de início de sessão expirou ou foi desmarcada.</string>
+    <string name="fui_email_link_dismiss_button">Dispensar</string>
+    <string name="fui_email_link_email_sent">Um e-mail de login com instruções adicionais foi enviado para %1$s. Verifique o seu e-mail para concluir o início de sessão.</string>
+    <string name="fui_email_link_header">"E-mail de início de sessão enviado"</string>
+    <string name="fui_email_link_invalid_link_header">Não é possível concluir o início de sessão</string>
+    <string name="fui_email_link_invalid_link_message">O código de ação é inválido. Isso pode acontecer se o código estiver malformado, expirado ou já tiver sido usado.</string>
+    <string name="fui_email_link_resend">Reenviar</string>
+    <string name="fui_email_link_trouble_getting_email_header">Está com dificuldades em receber o email??</string>
+    <string name="fui_email_link_trouble_getting_email_resend_solution">"Se os passos acima não funcionarem, pode reenviar o email. Note que isso irá desativar o link no email anterior."</string>
+    <string name="fui_email_link_trouble_getting_possible_fixes">"Tente estas soluções comuns:
+• Verifique se o email foi marcado como spam ou filtrado.
+• Verifique a sua conexão à internet.
+• Verifique se não digitou o seu email com erros ortográficos.
+• Verifique se o espaço na sua caixa de entrada não está a acabar ou se existem outros problemas relacionados com as configurações da caixa de entrada.
+"</string>
+    <string name="fui_email_link_wrong_device_header">Novo dispositivo ou navegador detectado.</string>
+    <string name="fui_email_link_wrong_device_message">Tente abrir o link usando o mesmo dispositivo ou navegador em que iniciou o processo de login.</string>
+    <string name="fui_enter_confirmation_code">Introduza o código de 6 dígitos para o qual enviámos</string>
+    <string name="fui_error_email_does_not_exist">"Esse endereço de e-mail não corresponde a uma conta existente"</string>
+    <string name="fui_error_invalid_password">Senha incorreta.</string>
+    <string name="fui_error_quota_exceeded">Ocorreu um problema ao verificar o seu número de telefone</string>
+    <string name="fui_error_session_expired">Este código já não é válido</string>
+    <string name="fui_error_too_many_attempts">Este número de telefone foi usado muitas vezes</string>
+    <string name="fui_error_unknown">Ocorreu um erro desconhecido.</string>
+    <string name="fui_idp_name_email">Email</string>
+    <string name="fui_idp_name_facebook">Facebook</string>
+    <string name="fui_idp_name_github">GitHub</string>
+    <string name="fui_idp_name_google">Google</string>
+    <string name="fui_idp_name_phone">Phone</string>
+    <string name="fui_idp_name_twitter">Twitter</string>
+    <string name="fui_incorrect_code_dialog_body">Código errado. Tente novamente.</string>
+    <string name="fui_invalid_email_address">"Esse endereço de e-mail não está correto"</string>
+    <string name="fui_invalid_phone_number">Introduza um número de telefone válido</string>
+    <string name="fui_missing_email_address">Introduza o seu endereço de e-mail para continuar</string>
+    <string name="fui_missing_first_and_last_name">Introduza o seu endereço de e-mail para continuar.</string>
+    <string name="fui_name_hint">Primeiro &amp; último nome</string>
+    <string name="fui_new_password_hint">Nova palavra-passe</string>
+    <string name="fui_next_default">A seguir</string>
+    <string name="fui_no_internet">Erro de rede, verifique a sua ligação à Internet.</string>
+    <string name="fui_password_hint">Password</string>
+    <string name="fui_password_recovery_body">Receba instruções enviadas para este e-mail que explicam como redefinir sua senha.</string>
+    <string name="fui_phone_hint">Número de Telefone</string>
+    <string name="fui_privacy_policy">Política de Privacidade</string>
+    <string name="fui_progress_dialog_checking_accounts">Verificação de contas existentes…</string>
+    <string name="fui_progress_dialog_loading">Carregando…</string>
+    <string name="fui_progress_dialog_sending">Enviando…</string>
+    <string name="fui_progress_dialog_signing_in">Entrando…</string>
+    <string name="fui_progress_dialog_signing_up">Registo em curso…</string>
+    <string name="fui_required_field">"Você não pode deixar isso vazio."</string>
+    <string name="fui_resend_code">Reenviar código</string>
+    <string name="fui_resend_code_in">Reenviar código em 0:%02d</string>
+    <string name="fui_sign_in_anonymously">Continuar como convidado</string>
+    <string name="fui_sign_in_default">Iniciar sessão</string>
+    <string name="fui_sign_in_with_apple">Iniciar sessão com a Apple</string>
+    <string name="fui_sign_in_with_email">Iniciar sessão com e-mail</string>
+    <string name="fui_sign_in_with_facebook">Iniciar sessão com o Facebook</string>
+    <string name="fui_sign_in_with_github">Iniciar sessão com o GitHub</string>
+    <string name="fui_sign_in_with_google">Iniciar sessão com o Google</string>
+    <string name="fui_sign_in_with_microsoft">Iniciar sessão com o Microsoft</string>
+    <string name="fui_sign_in_with_phone">Iniciar sessão com o telemóvel</string>
+    <string name="fui_sign_in_with_phone_number">Iniciar sessão com número de telefone</string>
+    <string name="fui_sign_in_with_twitter">Iniciar sessão com o Twitter</string>
+    <string name="fui_sign_in_with_yahoo">Iniciar sessão com o Yahoo</string>
+    <string name="fui_sms_terms_of_service">Ao tocar em "%1$s", um SMS pode ser enviado. Taxas de mensagens &amp; dados podem ser aplicadas.</string>
+    <string name="fui_sms_terms_of_service_and_privacy_policy_extended">Ao tocar em "%1$s", está a indicar que aceita os nossos %2$s e %3$s. Pode ser enviado um SMS. Taxas de mensagens &amp; dados podem ser aplicadas.</string>
+    <string name="fui_terms_of_service">Termos de Serviço</string>
+    <string name="fui_title_confirm_recover_password">Verifique o seu email</string>
+    <string name="fui_title_recover_password_activity">Recuperar palavra-passe</string>
+    <string name="fui_title_register_email">Registar-me</string>
+    <string name="fui_title_welcome_back_idp_prompt">@string/fui_sign_in_default</string>
+    <string name="fui_title_welcome_back_password_prompt">@string/fui_sign_in_default</string>
+    <string name="fui_tos_and_pp">Ao continuar, está a indicar que aceita os nossos %1$s e %2$s.</string>
+    <string name="fui_tos_and_pp_footer">%1$s     %2$s</string>
+    <string name="fui_trouble_signing_in">Problemas ao iniciar sessão?</string>
+    <string name="fui_verify_phone_number">Verificar número de telefone</string>
+    <string name="fui_verify_phone_number_title">Introduza o seu número de telefone</string>
+    <string name="fui_verify_your_phone_title">Verifique o seu número de telefone</string>
+    <string name="fui_verifying">A verificar…</string>
+    <string name="fui_welcome_back_email_header">Bem-vindo de volta!</string>
+    <string name="fui_welcome_back_email_link_header">Você já tem uma conta</string>
+    <string name="fui_welcome_back_email_link_prompt_body">"Você já usou %1$s. Você pode conectar sua conta %2$s com %1$s entrando com o link de e-mail abaixo.
+
+Para que esse fluxo conecte com êxito sua conta %2$s a este e-mail, você precisa abrir o link no mesmo dispositivo ou navegador."</string>
+    <string name="fui_welcome_back_idp_header">Você já tem uma conta</string>
+    <string name="fui_welcome_back_idp_prompt">"Você já usou %1$s. Inicie sessão com %2$s para continuar."</string>
+    <string name="fui_welcome_back_password_prompt_body">"Já utilizou %1$s para iniciar sessão. Introduza a sua palavra-passe para essa conta."</string>
+    <!-- <string name="gcm_defaultSenderId">329555102020</string>-->
+    <string name="get_ads">Obter versão sem anúncios</string>
+    <string name="get_an_access">"Obtenha acesso à
+aplicação sem anúncios"</string>
+    <string name="get_it">Obtê-lo</string>
+    <string name="getpremium">Obtenha Premium</string>
+    <string name="gross_monthly">Rendimento Mensal Bruto*</string>
+    <string name="gst_amount">Valor IVA</string>
+    <string name="half_yearly">Semestral</string>
+    <string name="hello_world">Olá mundo!</string>
+    <string name="hide_bottom_view_on_scroll_behavior">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
+    <string name="history">HISTÓRICO</string>
+    <string name="icon_content_description">Ícone de caixa de diálogo</string>
+    <string name="images">IMAGENS</string>
+    <string name="income_caps">RENDIMENTOS</string>
+    <string name="interest">Juros*</string>
+
+    <string name="investmentAmount">Valor do Investimento*</string>
+    <string name="investment_amount">Valor do Investimento</string>
+    <string name="item_view_role_description">Separador</string>
+    <string name="label_account_verification">"Conta
+Verificação"</string>
+    <string name="label_balance">SALDO</string>
+    <string name="label_bullet">•</string>
+    <string name="label_choose_currency">ESCOLHA A MOEDA</string>
+    <string name="label_create_account">"Criar
+Conta"</string>
+    <string name="label_dont_have_an_account">"Não tem uma conta?"</string>
+    <string name="label_email">Email</string>
+    <string name="label_forgot_password">Esqueceu-se da palavra-passe?</string>
+
+    <string name="label_expense">DESPESAS</string>
+    <string name="label_expense_type_donation">DOAÇÃO</string>
+    <string name="label_expense_type_fees">TAXAS</string>
+    <!--  COMIDA &amp; BEBIDA  -->
+    <string name="label_expense_type_food">ALIMENTAÇÃO</string>
+    <string name="label_expense_type_groceries">SUPERMERCADO</string>
+    <string name="label_expense_type_loan">EMPRÉSTIMOS</string>
+    <string name="label_expense_type_medical">MEDICINA</string>
+    <string name="label_expense_type_rent">ARRENDAMENTO</string>
+    <string name="label_expense_type_shopping">COMPRAS</string>
+    <string name="label_expense_type_transportation">TRANSPORTES</string>
+    <string name="label_income">RENDIMENTOS</string>
+    <string name="label_income_type_coupon">CUPÃO</string>
+    <string name="label_income_type_income_from_rent">RENDIMENTOS DE RENDAS</string>
+    <string name="label_income_type_interest">JUROS</string>
+    <string name="label_income_type_pension">PENSÃO</string>
+    <string name="label_income_type_salary">SALÁRIO</string>
+    <string name="label_income_type_tax_return">DECLARAÇÃO DE IRS</string>
+    <string name="label_income_type_work_on_demand">TRABALHO SOB DEMANDA</string>
+
+    <string name="label_month">MÊS</string>
+    <string name="label_year">ANO</string>
+    <string name="label_password">Palavra-passe</string>
+    <string name="label_please_do_sign_in_to_proceed">Please do your account verification in to proceedPor favor, faça a verificação da sua conta para continuar.</string>
+    <string name="label_privacy_policy"><u>Política de Privacidade</u></string>
+    <string name="label_update_account">"Atualizar
+Conta"</string>
+    <string name="label_welcome">Bem-vindos,</string>
+    <string name="label_welcome_dashboard">Bem-vindos, %1$s</string>
+    <string name="loan_calc">Cálculos de Empréstimos</string>
+    <string name="last_date">Última Data do Empréstimo</string>
+    <string name="lifetime">Vida útil</string>
+    <string name="lifetimepay">Obtenha benefícios premium vitalícios pagando um pagamento único.</string>
+    <string name="loan_1">EMPRÉSTIMO 1</string>
+    <string name="loan_2">EMPRÉSTIMO 2</string>
+    <string name="loan_amount">Valor do Empréstimo</string>
+    <string name="loan_calculations">Cálculos de Empréstimos:</string>
+    <string name="loan_eligi_rules">"A elegibilidade do empréstimo é calculada usando o sistema FOIR, portanto, pode variar com diferentes bancos.
+
+É o cálculo estimado "</string>
+    <string name="loan_eligibility">Elegibilidade do empréstimo</string>
+    <string name="loan_eligible_for">Valor do empréstimo para o qual você é elegível</string>
+    <string name="loan_tenure">Loan Tenure*</string>
+    <string name="lumpsum">Posse do empréstimo</string>
+    <string name="making_all_finance">"Fazer todo o tipo
+de cálculos fáceis e
+simples"</string>
+
+    <string name="maturityDate">Data de Vencimento</string>
+    <string name="maturity_amount">Montante de Vencimento</string>
+    <string name="maturity_value">Valor de Vencimento</string>
+    <string name="menu_item_broadcast_notification">Notificação de transmissão</string>
+    <string name="menu_item_download">Downloads</string>
+    <string name="menu_item_feedback">Feedback</string>
+    <string name="menu_item_interstitial_ad_OFF">Anúncio intersticial (DESATIVADO)</string>
+    <string name="menu_item_interstitial_ad_ON">Anúncio intersticial (ATIVADO)</string>
+    <string name="menu_item_logout">Logout</string>
+    <string name="menu_item_more">Mais</string>
+    <string name="menu_item_more_apps">Mais Apps</string>
+    <string name="menu_item_profile">Perfil</string>
+    <string name="menu_item_rate_us">Avalie-nos</string>
+    <string name="menu_item_share">Partilhar</string>
+    <string name="menu_item_subscribe">Subscrever</string>
+    <string name="message_required_permission">Este aplicativo precisa de permissão para usar esse recurso. Você pode concedê-los nas configurações do aplicativo.</string>
+    <string name="monday">Seg</string>
+    <string name="month">Mês</string>
+    <string name="monthly">Mensal</string>
+    <string name="monthly_withdrawl">Valor de Levantamento Mensal*</string>
+    <string name="more_apps">Mais Apps</string>
+    <string name="mostpopular">Mais Popular</string>
+    <string name="msg_alert_change_date">A data do seu telefone está incorreta! Ajuste o relógio e tente novamente.</string>
+    <string name="msg_alert_confirm_logout">Tem certeza de que deseja sair do aplicativo?</string>
+    <string name="msg_alert_connection">Conecte-se com conexão de rede ativa e tente novamente.</string>
+    <string name="mutual_funds_amp_sip">Fundos Mútuos &amp; PIS:</string>
+    <string name="mutual_sip">Fundos Mútuos &amp; PIS</string>
+    <string name="name">NOME</string>
+
+    <string name="nav_item_calendar">CALENDÁRIO</string>
+    <string name="nav_item_chart">GRÁFICO</string>
+    <string name="nav_item_home">INÍCIO</string>
+    <string name="nav_item_report">RELATÓRIO</string>
+    <string name="navigation_drawer_close">fechar</string>
+    <string name="navigation_drawer_open">abrir</string>
+    <string name="net_amount">Montante Líquido</string>
+    <string name="no">Não</string>
+    <string name="noads">Sem anúncios</string>
+    <string name="nopersons">Nº de Pessoas</string>
+    <string name="not_now">Agora não</string>
+    <string name="note_use_the_same_google_account_for_purchase_any_plan">( Use a mesma conta do Google para comprar qualquer plano em todo o aplicativo. )</string>
+    <string name="offline_notification_text">Toque para abrir o anúncio</string>
+    <string name="offline_notification_title">Ver o anúncio que guardou quando estava offline</string>
+    <string name="offline_opt_in_confirm">OK</string>
+    <string name="offline_opt_in_confirmation">"Você receberá uma notificação com o link quando estiver online novamente"</string>
+    <string name="offline_opt_in_decline">Não, obrigado</string>
+    <string name="offline_opt_in_message">"Enviaremos uma notificação com um link para o site do anunciante."</string>
+    <string name="offline_opt_in_title">"Abra o anúncio quando estiver online novamente."</string>
+    <string name="ok">Está bem</string>
+    <string name="onedaypremium">Assista ao vídeo AD e ganhe 1 dia premium</string>
+    <string name="onemonth">Mensal</string>
+    <string name="our_life">A nossa vida é um empréstimo recebido da morte</string>
+    <string name="password_toggle_content_description">Mostrar palavra-passe</string>
+
+    <string name="pay">Obtenha Premium</string>
+    <string name="please_wait_fetching_details">Aguarde, buscando detalhes</string>
+    <string name="ppf">PPF</string>
+    <string name="ppf_calc">PPF Calculator</string>
+    <string name="premium">Premium</string>
+    <string name="premium_benifits">Benefícios Premium:</string>
+    <string name="principal_2000">Principal : 2000$</string>
+    <string name="principl">Principal</string>
+    <string name="principl_amount">Montante Principal*</string>
+    <string name="privacy">Política de Privacidade</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <!--    <string name="project_id">fintuga-239f4</string>-->
+    <string name="quarterly">Trimestral</string>
+    <string name="rate_of_interest">Taxa de Juro*</string>
+    <string name="rate_of_tax">Taxa de Imposto*</string>
+    <string name="rate_us">Avalie-nos</string>
+    <string name="rd_calc">RD</string>
+    <string name="reminder_me">Lembrar-me</string>
+
+    <string name="saturday">Sab</string>
+    <string name="save">Economize 48%</string>
+    <string name="save_as">GUARDAR COMO</string>
+    <string name="SavingActivity">POUPANÇA</string>
+    <string name="saving_date">Data de poupança:</string>
+    <string name="savings">POUPANÇAS</string>
+    <string name="search_menu_title">Pesquisa</string>
+    <string name="set_reminder">Definir lembrete</string>
+    <string name="set_reminder_time">Definir horário do lembrete</string>
+    <string name="share_app">Compartilhar o aplicativo</string>
+    <string name="share_result">Compartilhar resultado</string>
+    <string name="share_the_app">Compartilhar o aplicativo</string>
+    <string name="show_report">Mostrar relatório</string>
+    <string name="signUp_email">Email</string>
+    <string name="signUp_fullName">Nome Completo</string>
+    <string name="signUp_password">Palavra-passe</string>
+    <string name="simple_compound">Juros simples &amp; compostos</string>
+    <string name="simple_compound_new">Simples &amp; Composto</string>
+    <string name="sip">PIS</string>
+    <string name="sip_invest">Plano de Investimento Sistemático</string>
+    <string name="sixmonths">Seis Meses</string>
+    <string name="skipandcontinue">Pular &amp; continuar com anúncios</string>
+    <string name="split">Dividir</string>
+    <string name="splitbill">Divida a Sua Fatura:</string>
+    <string name="start_date">Data de Início</string>
+    <string name="statistics">Estatistica</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="subs_title">Como funciona o pagamento da subscrição?</string>
+    <string name="subscriptionpolicy">"A subscrição será cobrada automaticamente após o período de avaliação terminar ou a subscrição terminar, a menos que cancele a sua subscrição pelo menos 24 horas antes da data de renovação.
+
+O pagamento vitalício cobrará apenas uma vez, não é o modo de assinatura para renovar.
+
+Pode cancelar a sua subscrição através das definições da sua conta do Google Play ou esta será renovada automaticamente.
+"</string>
+    <string name="sunday">Dom</string>
+    <string name="swp">PSS</string>
+    <string name="sys_withdraw">Plano de Saque Sistemático</string>
+    <string name="tax">Imposto</string>
+    <string name="tax_calc">Calculadora de Impostos</string>
+    <string name="tax_calculator">Calculadora de Impostos</string>
+    <string name="tenure">Posse*</string>
+    <string name="thursday">Quin</string>
+    <string name="title_activity_maps">Mapa</string>
+    <string name="title_alert_confirm_logout">Logout</string>
+    <string name="title_alert_connection">Erro de conexão</string>
+    <string name="title_alert_date">Data</string>
+    <string name="title_more">Gerente de Despesas</string>
+    <string name="title_required_permission">Precisa de permissões</string>
+    <string name="toast_empty_values">Os campos Email e Senha não podem estar vazios</string>
+    <string name="toast_loginFailed">Falha na autenticação</string>
+    <string name="toast_signup_empty_values">Os dados do utilizador não podem estar vazios</string>
+    <string name="toast_signup_success">O utilizador foi criado</string>
+    <string name="total_amount">Valor Total do Pagamento</string>
+    <string name="total_amount_tax">Montante Total</string>
+    <string name="total_int">Total de Juros</string>
+    <string name="total_invest_value">Valor Total dos Juros</string>
+    <string name="total_investment">Valor Total do Investimento</string>
+    <string name="total_month_emi">Total de PCH mensais</string>
+    <string name="total_payment">Pagamento Total/n(Principal + Juros)</string>
+    <string name="total_principle">Total Principal</string>
+    <string name="transactions">TRANSAÇÕES</string>
+    <string name="tuesday">Ter</string>
+    <string name="type_of_interest">Tipo de Juros</string>
+    <string name="unlimited_currency_conversions">Conversões de moeda ilimitadas</string>
+    <string name="unlimited_transactions">Adicionar transações ilimitadas no Gerente de Despesas</string>
+    <string name="unlockall">Desbloqueie todos os recursos premium</string>
+    <string name="update_currency_symbol">Atualizar símbolo de moeda</string>
+    <string name="use">usar</string>
+    <string name="view_in_details">Ver em Detalhes</string>
+    <string name="watch_video_ad">Ver Anúncio</string>
+    <string name="we_will_reminds_you_to_make_entries_of_your_transactions">Vamos lembrá-lo de fazer entradas de suas transações.</string>
+    <string name="wednesday">Quar</string>
+    <string name="welcom_app">"Bem-vindo à aplicação de
+calculadora financeira infalível"</string>
+    <string name="with_sleep">Com juros diários compostos</string>
+    <string name="yearly">Anual</string>
+    <string name="yes">Sim</string>
+
+
+    <string name="add_expense">Adicionar Gasto</string>
+    <string name="add_income">Adicionar Rendimento</string>
+    <string name="amount_caps">VALOR:</string>
+    <string name="category_caps">CATEGORIA</string>
+    <string name="date_label_add">Data do SWP:</string>
+    <string name="description_optional">DESCRIÇÃO (Opcional)</string>
+    <string name="done">FEITO</string>
+    <string name="date_caps">DATA:</string>
+    <string name="enter_amount_required">Insira o Valor (obrigatório)</string>
+    <string name="enter_amount_of_expense">Insira o Valor da Despesa</string>
+    <string name="enter_valid_amount">Insira o Valor Válido</string>
+    <string name="enter_valid_values">Insira o Valor Válido</string>
+    <string name="payment_mode_caps">MODO DE PAGAMENTO</string>
+    <string name="set_currency_symbol">Definir o símbolo da moeda</string>
+    <string name="expanse">Gasto</string>
+    <string name="income">Rendimento</string>
+    <string name="select_month">Selecionar mês</string>
+    <string name="select_months">Selecionar meses</string>
+    <string name="select_quarter">Selecionar trimestre</string>
+    <string name="select_half_year">Selecionar semestre</string>
+    <string name="select_year">Selecionar ano</string>
+    <string name="max_30_years">(max 30 anos)</string>
+    <string name="no_category_added">Não há categorias adicionadas ainda. Adicione algumas categorias clicando no icon abaixo.</string>
+
+    <!--  meses   -->
+    <string name="jan">Jan</string>
+    <string name="feb">Fev</string>
+    <string name="mar">Mar</string>
+    <string name="apr">Abr</string>
+    <string name="may">Mai</string>
+    <string name="jun">Jun</string>
+    <string name="jul">Jul</string>
+    <string name="aug">Ago</string>
+    <string name="sep">Set</string>
+    <string name="oct">Out</string>
+    <string name="nov">Nov</string>
+    <string name="dec">Dez</string>
+
+</resources>

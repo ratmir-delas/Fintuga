@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_sp_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:ellipsize="marquee"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/dimen_ten"
+        android:paddingTop="@dimen/dimen_five"
+        android:paddingRight="@dimen/dimen_ten"
+        android:paddingBottom="@dimen/dimen_five"
+        android:textAlignment="inherit"
+        android:textColor="@color/black" />
+</LinearLayout>

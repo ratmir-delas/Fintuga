@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="action_bar_size">16.0dip</dimen>
+    <dimen name="action_button_min_width">56.0dip</dimen>
+    <dimen name="action_button_padding_horizontal">4.0dip</dimen>
+    <dimen name="action_button_text_size">14.0sp</dimen>
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="appcompat_dialog_background_inset">16.0dip</dimen>
+    <dimen name="browser_actions_context_menu_max_width">500.0dip</dimen>
+    <dimen name="browser_actions_context_menu_min_padding">20.0dip</dimen>
+    <dimen name="cardview_compat_inset_shadow">1.0dip</dimen>
+    <dimen name="cardview_default_elevation">2.0dip</dimen>
+    <dimen name="cardview_default_radius">2.0dip</dimen>
+    <dimen name="cdv_extra_dimen">3.0dip</dimen>
+    <dimen name="clock_face_margin_start">64.0dip</dimen>
+
+    <dimen name="datepicker_view_animator_height">50.0dip</dimen>
+    <dimen name="datepicker_year_label_height">50.0dip</dimen>
+    <dimen name="dayHeight">64.0dip</dimen>
+    <dimen name="default_dimension">100.0dip</dimen>
+
+    <dimen name="dimen_eight">8.0dip</dimen>
+    <dimen name="dimen_fifteen">15.0dip</dimen>
+    <dimen name="dimen_five">5.0dip</dimen>
+    <dimen name="dimen_sp_dropdown_vertical_offset">50.0dip</dimen>
+    <dimen name="dimen_ten">10.0dip</dimen>
+    <dimen name="dimen_three">3.0dip</dimen>
+    <dimen name="dimen_transaction_image">15.0dip</dimen>
+    <dimen name="dimen_twenty">20.0dip</dimen>
+    <item name="disabled_alpha_material_dark" type="dimen">0.3</item>
+    <item name="disabled_alpha_material_light" type="dimen">0.26</item>
+    <dimen name="event_header_padding_bottom">8.0dip</dimen>
+    <dimen name="fab_margin">16.0dip</dimen>
+    <dimen name="fastscroll_default_thickness">8.0dip</dimen>
+    <dimen name="fastscroll_margin">0.0dip</dimen>
+    <dimen name="fastscroll_minimum_range">50.0dip</dimen>
+    <dimen name="fui_auth_method_button_drawablePadding">12.0dip</dimen>
+    <dimen name="fui_auth_method_button_margin">4.0dip</dimen>
+    <dimen name="fui_auth_method_button_width">208.0dip</dimen>
+    <dimen name="fui_body_padding_bottom">12.0dip</dimen>
+    <dimen name="fui_button_inset_bottom">3.0dip</dimen>
+    <dimen name="fui_button_inset_left">1.0dip</dimen>
+    <dimen name="fui_button_inset_right">2.0dip</dimen>
+    <dimen name="fui_button_inset_top">0.0dip</dimen>
+    <dimen name="fui_field_padding_vert">16.0dip</dimen>
+    <dimen name="fui_heading_padding_bottom">12.0dip</dimen>
+    <dimen name="fui_min_height_target">48.0dip</dimen>
+    <dimen name="fui_wrapper_padding_horiz">16.0dip</dimen>
+
+
+    <dimen name="minDialogWidth">280.0dip</dimen>
+
+    <dimen name="popup_quote_height">40.0dip</dimen>
+    <dimen name="popup_quote_margin_top">-30.0dip</dimen>
+    <dimen name="popup_quote_width">150.0dip</dimen>
+    <dimen name="radio_button_conner_radius">5.0dip</dimen>
+    <dimen name="radio_button_stroke_border">1.0dip</dimen>
+    <dimen name="space.medium">16.0dip</dimen>
+    <dimen name="space.small">8.0dip</dimen>
+    <dimen name="space.very_small">4.0dip</dimen>
+    <dimen name="subtitle_corner_radius">2.0dip</dimen>
+    <dimen name="subtitle_outline_width">2.0dip</dimen>
+    <dimen name="subtitle_shadow_offset">2.0dip</dimen>
+    <dimen name="subtitle_shadow_radius">2.0dip</dimen>
+    <dimen name="test_mtrl_calendar_day_cornerSize">52.0dip</dimen>
+    <dimen name="toolbarTitle">18.0dip</dimen>
+
+</resources>
