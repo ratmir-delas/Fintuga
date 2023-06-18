@@ -10,12 +10,12 @@
     <bool name="isAppOpen">true</bool>
     <bool name="isReward">true</bool>
 
-    <string name="admob_app_id" translatable="false">ca-app-pub-3940256099942544~3347511713</string>
-    <string name="bannerId" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
-    <string name="nativeId" translatable="false">ca-app-pub-3940256099942544/2247696110</string>
-    <string name="interstitialId" translatable="false">ca-app-pub-3940256099942544/1033173712</string>
-    <string name="appOpenId" translatable="false">ca-app-pub-3940256099942544/3419835294</string>
-    <string name="rewardId" translatable="false">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="admob_app_id" translatable="false">ca-app-pub-1008697854220934~3466821655</string>
+    <string name="bannerId" translatable="false">ca-app-pub-1008697854220934/1360012962</string>
+    <string name="nativeId" translatable="false">ca-app-pub-1008697854220934/8663787910</string>
+    <string name="interstitialId" translatable="false">ca-app-pub-1008697854220934/6809201649</string>
+    <string name="appOpenId" translatable="false">ca-app-pub-1008697854220934/9785297897</string>
+    <string name="rewardId" translatable="false">ca-app-pub-1008697854220934/8911199922</string>
 
     <string name="color_expens_acc_loan" translatable="false">\#00bcd4</string>
     <string name="color_expens_donation" translatable="false">\#2196f3</string>

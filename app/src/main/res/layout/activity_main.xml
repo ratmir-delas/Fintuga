@@ -24,6 +24,7 @@
                 android:layout_width="32.0dip"
                 android:layout_height="32.0dip"
                 android:layout_margin="10dp"
+                android:visibility="invisible"
                 android:src="@drawable/baseline_settings_24" />
 
             <TextView

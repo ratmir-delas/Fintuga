@@ -11,24 +11,22 @@ android {
             keyAlias 'FintugaKey'
             keyPassword 'fintuga'
         }
+        release {
+            storeFile file('D:\\a2021146\\Documents\\school\\3ano\\pap\\serio\\fintuga.jks')
+            storePassword 'fintuga'
+            keyAlias 'FintugaKey'
+            keyPassword 'fintuga'
+        }
     }
 
-//    signingConfigs {
-//        debug {
-//            storeFile file('E:\\KeyStore\\Envoto keystore\\Envoto keystore\\envoto.jks')
-//            storePassword 'envoto'
-//            keyAlias 'envoto'
-//            keyPassword 'envoto'
-//        }
-//    }
     compileSdk 32
 
     defaultConfig {
         applicationId "com.tugasoft.fintuga"
         minSdk 21
         targetSdk 32
-        versionCode 1
-        versionName "1.0"
+        versionCode 4
+        versionName "1.03"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
@@ -39,6 +37,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
         }
     }
 
@@ -71,7 +70,7 @@ dependencies {
     implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
     implementation 'com.github.lecho:hellocharts-android:1.5.8'
     implementation 'com.airbnb.android:lottie:3.4.1'
-    implementation "com.android.billingclient:billing:3.0.0"
+    implementation "com.android.billingclient:billing:6.0.0"
     implementation 'com.github.bumptech.glide:glide:4.14.2'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
     implementation group: 'com.framgia.library.calendardayview', name: 'library', version: '1.0.1'

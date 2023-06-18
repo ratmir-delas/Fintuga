@@ -3,6 +3,7 @@ package com.tugasoft.fintuga;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.ColorDrawable;
@@ -38,8 +39,10 @@ import com.tugasoft.fintuga.tools.EmiCalculatorActivity;
 import com.tugasoft.fintuga.tools.FdCalculatorActivity;
 import com.tugasoft.fintuga.tools.SimpleAndCompoundActivity;
 import com.tugasoft.fintuga.tools.SwpCalculatorActivity;
+import com.tugasoft.fintuga.utils.MySharedPreferences;
 
 import java.util.Locale;
+import java.util.Objects;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     public View line;
     public RelativeLayout linearLayout2;
     ImageView burger;
-    DrawerLayout drawerLayout;
     RelativeLayout main_Lay, myLay;
     Dialog main_dialog;
     private ReviewManager manager;
@@ -64,13 +66,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         main_Lay = findViewById(R.id.main_Lay);
-
-        drawerLayout = findViewById(R.id.drawer_layout);
-
         manager = ReviewManagerFactory.create(this);
         cardview_ad = findViewById(R.id.admobcard);
         ad = findViewById(R.id.ad);
-        View inflate = LayoutInflater.from(this).inflate(R.layout.exit_dialog, (ViewGroup) null);
+        View inflate = LayoutInflater.from(this).inflate(R.layout.exit_dialog, null);
         Dialog dialog = new Dialog(this);
         main_dialog = dialog;
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
@@ -84,12 +83,17 @@ public class MainActivity extends AppCompatActivity {
 
         refreshAd_exit();
         AdmobNative();
+        setBurger();
+    }
 
-        burger = findViewById(R.id.burger);
-        burger.setOnClickListener(view -> {
-            //drawerLayout.openDrawer(GravityCompat.START);
-            startActivity(new Intent(this, MoreActivity.class));
-        });
+    private void setBurger() {
+        if (!Objects.equals(MySharedPreferences.getStr("KEY_CURRENCY_TYPE", "p"), "p")) {
+            burger = findViewById(R.id.burger);
+            burger.setVisibility(View.VISIBLE);
+            burger.setOnClickListener(view -> {
+                startActivity(new Intent(this, MoreActivity.class));
+            });
+        }
     }
 
     public void changeLocale(String locale) {
@@ -158,5 +162,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void swp(View view) {
         startActivity(new Intent(this, SwpCalculatorActivity.class));
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        setBurger();
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        setBurger();
     }
 }

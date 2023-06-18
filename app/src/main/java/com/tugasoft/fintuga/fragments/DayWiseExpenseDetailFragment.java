@@ -89,10 +89,10 @@ public class DayWiseExpenseDetailFragment extends DialogFragment {
     }
 
     private void setToolbar(View view) {
-        Toolbar toolbar = (Toolbar) view.findViewById(R.id.toolbar);
-        toolbar.setTitle((CharSequence) this.mSelectedDate);
+        Toolbar toolbar = view.findViewById(R.id.toolbar);
+        toolbar.setTitle(this.mSelectedDate);
         toolbar.setTitleTextColor(ContextCompat.getColor(getActivity(), android.R.color.black));
-        toolbar.setNavigationIcon((int) R.drawable.ic_cancle);
+        toolbar.setNavigationIcon(R.drawable.ic_cancle);
         toolbar.setNavigationOnClickListener(view1 -> {
             if (DayWiseExpenseDetailFragment.this.getActivity() != null && (DayWiseExpenseDetailFragment.this.getActivity() instanceof DashboardActivity)) {
                 ((DashboardActivity) DayWiseExpenseDetailFragment.this.getActivity()).dismissViewTransactionEntryDetailsDialog(view1.getX(), view1.getY());
@@ -101,13 +101,13 @@ public class DayWiseExpenseDetailFragment extends DialogFragment {
     }
 
     private void loadAllViews(View view) {
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.rvTimesheetHistory);
-        FloatingActionButton floatingActionButton = (FloatingActionButton) view.findViewById(R.id.fab_view_proof);
+        RecyclerView recyclerView = view.findViewById(R.id.rvTimesheetHistory);
+        FloatingActionButton floatingActionButton = view.findViewById(R.id.fab_view_proof);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        ((TextView) view.findViewById(R.id.tv_day_wise_total_income)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice((double) this.mExpenseDetailModel.getTotalIncome())));
-        ((TextView) view.findViewById(R.id.tv_day_wise_total_expense)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice((double) this.mExpenseDetailModel.getTotalExpense())));
-        ((TextView) view.findViewById(R.id.tv_day_wise_total_saving)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice((double) (this.mExpenseDetailModel.getTotalIncome() - this.mExpenseDetailModel.getTotalExpense()))));
+        ((TextView) view.findViewById(R.id.tv_day_wise_total_income)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice(this.mExpenseDetailModel.getTotalIncome())));
+        ((TextView) view.findViewById(R.id.tv_day_wise_total_expense)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice(this.mExpenseDetailModel.getTotalExpense())));
+        ((TextView) view.findViewById(R.id.tv_day_wise_total_saving)).setText(MySharedPreferences.getStr(MySharedPreferences.KEY_CURRENCY_TYPE, "").concat(" ").concat(CommonMethod.formatPrice(this.mExpenseDetailModel.getTotalIncome() - this.mExpenseDetailModel.getTotalExpense())));
         recyclerView.setAdapter(new CalenderDayWiseHistoryAdapter(getActivity(), this.mExpenseDetailModel.getExpenses()));
         if (!this.mExpenseDetailModel.isHavingProofImage()) {
             floatingActionButton.hide();
@@ -131,7 +131,7 @@ public class DayWiseExpenseDetailFragment extends DialogFragment {
             create.setCanceledOnTouchOutside(true);
             create.show();
         });
-        FrameLayout frameLayout = (FrameLayout) view.findViewById(R.id.ad_view_container);
+        FrameLayout frameLayout = view.findViewById(R.id.ad_view_container);
         AdsProvider.getInstance().addBanner(getActivity(), frameLayout);
     }
 
@@ -147,6 +147,6 @@ public class DayWiseExpenseDetailFragment extends DialogFragment {
     private int getEnclosingCircleRadius(View view, int i, int i2) {
         int left = i + view.getLeft();
         int top = i2 + view.getTop();
-        return ((Integer) Collections.max(Arrays.asList(new Integer[]{Integer.valueOf((int) Math.hypot((double) (left - view.getLeft()), (double) (top - view.getTop()))), Integer.valueOf((int) Math.hypot((double) (view.getRight() - left), (double) (top - view.getTop()))), Integer.valueOf((int) Math.hypot((double) (left - view.getLeft()), (double) (view.getBottom() - top))), Integer.valueOf((int) Math.hypot((double) (view.getRight() - left), (double) (view.getBottom() - top)))}))).intValue();
+        return Collections.max(Arrays.asList((int) Math.hypot(left - view.getLeft(), top - view.getTop()), (int) Math.hypot(view.getRight() - left, top - view.getTop()), (int) Math.hypot(left - view.getLeft(), view.getBottom() - top), (int) Math.hypot(view.getRight() - left, view.getBottom() - top)));
     }
 }

@@ -29,6 +29,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="6.0.0" />
         <activity
             android:name="com.tugasoft.fintuga.activity.ShowPDFActivity"
             android:exported="true" >
