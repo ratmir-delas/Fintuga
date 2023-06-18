@@ -60,6 +60,7 @@ import java.util.Objects;
 
 
 public class SwpCalculatorActivity extends AppCompatActivity implements Statementsip.OnMessageReadListener {
+
     public CardView admobcard;
     String Mmonth, tmonth, name, appLink;
     Bitmap bmp;
@@ -76,7 +77,6 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
     DatePickerDialog.OnDateSetListener setListener;
     TextView totalInterest, totalInvestment, withdrawal;
     double totalInterestAmount, totalInvestmentAmount, withdrawalAmount, maturityValue, investmentAmount, Tenure;
-    //private String JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER;
 
     @Override
     public void onCreate(Bundle bundle) {
@@ -93,30 +93,28 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
         supportActionBar.setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle(R.string.sys_withdraw);
-        this.admobcard = findViewById(R.id.admobcard);
-
-        Log.d("emicalculator", "passed admob");
+        admobcard = findViewById(R.id.admobcard);
 
         if (!sharedPreferences.getBoolean("isPurchased", false)) {
             AdsProvider.getInstance().addBanner(this, findViewById(R.id.customeventnative_framelayout));
         }
-        this.investment = findViewById(R.id.InvestmentAmoount);
-        this.rate = findViewById(R.id.interestAmount);
-        this.Time = findViewById(R.id.tenure);
-        this.withdrawal = findViewById(R.id.withdrawalAmoount);
-        this.totalInvestment = findViewById(R.id.totalInvestment);
-        this.totalInterest = findViewById(R.id.totalInterest);
-        this.maturityDate = findViewById(R.id.Matuirtydate);
-        this.maturity = findViewById(R.id.MaturityValue);
+        investment = findViewById(R.id.InvestmentAmoount);
+        rate = findViewById(R.id.interestAmount);
+        Time = findViewById(R.id.tenure);
+        withdrawal = findViewById(R.id.withdrawalAmoount);
+        totalInvestment = findViewById(R.id.totalInvestment);
+        totalInterest = findViewById(R.id.totalInterest);
+        maturityDate = findViewById(R.id.Matuirtydate);
+        maturity = findViewById(R.id.MaturityValue);
         SQLiteDatabase openOrCreateDatabase = openOrCreateDatabase("EMI", 0, null);
-        this.myDatabase = openOrCreateDatabase;
+        myDatabase = openOrCreateDatabase;
         openOrCreateDatabase.execSQL("CREATE TABLE IF NOT EXISTS swpTable(name TEXT,principalAmount DOUBLE,interest DOUBLE,tenure DOUBLE,date TEXT,withdrawal DOUBLE,id INTEGER PRIMARY KEY)");
-        this.day = findViewById(R.id.date);
+        day = findViewById(R.id.date);
         Bitmap decodeResource = BitmapFactory.decodeResource(getResources(), R.drawable.swpdetail);
-        this.bmp = decodeResource;
-        this.scalebmp = Bitmap.createScaledBitmap(decodeResource, 1200, 2010, false);
-        this.frameLayout = findViewById(R.id.blur);
-        this.group = findViewById(R.id.togle);
+        bmp = decodeResource;
+        scalebmp = Bitmap.createScaledBitmap(decodeResource, 1200, 2010, false);
+        frameLayout = findViewById(R.id.blur);
+        group = findViewById(R.id.togle);
         group.setOnCheckedChangeListener((radioGroup, i) -> {
             if (i == R.id.month) {
                 radioButton = findViewById(R.id.year);
@@ -133,16 +131,16 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
             }
         });
         Calendar instance = Calendar.getInstance();
-        this.year = instance.get(1);
-        this.month = instance.get(2) + 1;
-        this.date = instance.get(5);
+        year = instance.get(1);
+        month = instance.get(2) + 1;
+        date = instance.get(5);
 
         CommonMethod.getShortMonthByNumber(this, month);
 
-        Button button = this.day;
-        button.setText("First EMI: " + this.date + " " + this.tmonth + " " + this.year);
+        Button button = day;
+        button.setText("First EMI: " + date + " " + tmonth + " " + year);
 
-        this.setListener = (datePicker, i, i2, i3) -> {
+        setListener = (datePicker, i, i2, i3) -> {
             SwpCalculatorActivity.this.date = i3;
             SwpCalculatorActivity.this.month = i2 + 1;
             SwpCalculatorActivity.this.year = i;
@@ -162,23 +160,6 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
             datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(0));
             datePickerDialog.show();
         });
-
-        Log.d("emicalculator", "passed JANUARY");
-
-
-        // Initialize month strings
-//        JANUARY = getString(R.string.jan);
-//        FEBRUARY = getString(R.string.feb);
-//        MARCH = getString(R.string.mar);
-//        APRIL = getString(R.string.apr);
-//        MAY = getString(R.string.may);
-//        JUNE = getString(R.string.jun);
-//        JULY = getString(R.string.jul);
-//        AUGUST = getString(R.string.aug);
-//        SEPTEMBER = getString(R.string.sep);
-//        OCTOBER = getString(R.string.oct);
-//        NOVEMBER = getString(R.string.nov);
-//        DECEMBER = getString(R.string.dec);
     }
 
     public void calculate(View view) {
@@ -205,11 +186,11 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
         } else {
             Toast.makeText(this, "Interest rate should be less than 50%", Toast.LENGTH_SHORT).show();
         }
+    }
 
-        //show result layout
+    private void showResult() {
         LinearLayout result = findViewById(R.id.result_layout);
         result.setVisibility(View.VISIBLE);
-
         ScrollView scrollView = findViewById(R.id.scroll);
         scrollView.post(() -> scrollView.fullScroll(ScrollView.FOCUS_DOWN));
     }
@@ -355,6 +336,8 @@ public class SwpCalculatorActivity extends AppCompatActivity implements Statemen
         int remainingMonths = totalMonths - ((totalYears - year) * 12);
         String monthName = CommonMethod.getShortMonthByNumber(this, remainingMonths);
         maturityDate.setText(date + " " + monthName + " " + totalYears);
+
+        showResult();
     }
 
     public void statistic(View view) {

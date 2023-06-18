@@ -74,7 +74,6 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
     private SharedPreferences.Editor editor;
     private MenuItem menuDoneItem;
     private SharedPreferences sharedPreferences;
-    private String JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER;
 
     @Override
     public void onCreate(Bundle bundle) {
@@ -83,8 +82,8 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
         getWindow().setFlags(1024, 1024);
         setContentView((int) R.layout.activity_simple_and_compound);
         SharedPreferences sharedPreferences2 = getSharedPreferences("mypref", 0);
-        this.sharedPreferences = sharedPreferences2;
-        this.editor = sharedPreferences2.edit();
+        sharedPreferences = sharedPreferences2;
+        editor = sharedPreferences2.edit();
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitleTextColor(Color.parseColor("#000000"));
@@ -93,22 +92,22 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
         supportActionBar.setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle(R.string.simple_compound);
-        this.admobcard = findViewById(R.id.admobcard);
+        admobcard = findViewById(R.id.admobcard);
 
-        if (!this.sharedPreferences.getBoolean("isPurchased", false)) {
+        if (!sharedPreferences.getBoolean("isPurchased", false)) {
             AdmobUnified();
         }
-        this.investmentEdit = findViewById(R.id.amount);
-        this.rateEdit = findViewById(R.id.rateoftax);
-        this.time = findViewById(R.id.tenure);
+        investmentEdit = findViewById(R.id.amount);
+        rateEdit = findViewById(R.id.rateoftax);
+        time = findViewById(R.id.tenure);
         Bitmap decodeResource = BitmapFactory.decodeResource(getResources(), R.drawable.simpledetails);
-        this.bmp = decodeResource;
-        this.scalebmp = Bitmap.createScaledBitmap(decodeResource, 1200, 2010, false);
-        this.interest = findViewById(R.id.interestValue);
-        this.netAmount = findViewById(R.id.netamount);
-        this.maturity = findViewById(R.id.maturityAmount);
+        bmp = decodeResource;
+        scalebmp = Bitmap.createScaledBitmap(decodeResource, 1200, 2010, false);
+        interest = findViewById(R.id.interestValue);
+        netAmount = findViewById(R.id.netamount);
+        maturity = findViewById(R.id.maturityAmount);
         RadioGroup radioGroup = findViewById(R.id.togle);
-        this.group = radioGroup;
+        group = radioGroup;
         radioGroup.setOnCheckedChangeListener((radioGroup1, i) -> {
             if (i == R.id.month) {
                 SimpleAndCompoundActivity simpleAndCompound = SimpleAndCompoundActivity.this;
@@ -126,27 +125,13 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
                 SimpleAndCompoundActivity.this.radioButton.setTextColor(SimpleAndCompoundActivity.this.getResources().getColor(R.color.fontBlackDisable));
             }
         });
-        this.spiner = (Spinner) findViewById(R.id.spinner);
-        this.spinner.add("Compound interest");
-        this.spinner.add("Simple interest");
-        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, this.spinner);
+        spiner = (Spinner) findViewById(R.id.spinner);
+        spinner.add("Compound interest");
+        spinner.add("Simple interest");
+        ArrayAdapter arrayAdapter = new ArrayAdapter(this, android.R.layout.simple_spinner_item, spinner);
         arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        this.spiner.setAdapter(arrayAdapter);
-        this.spiner.setOnItemSelectedListener(this);
-
-        // Initialize month strings
-        JANUARY = getString(R.string.jan);
-        FEBRUARY = getString(R.string.feb);
-        MARCH = getString(R.string.mar);
-        APRIL = getString(R.string.apr);
-        MAY = getString(R.string.may);
-        JUNE = getString(R.string.jun);
-        JULY = getString(R.string.jul);
-        AUGUST = getString(R.string.aug);
-        SEPTEMBER = getString(R.string.sep);
-        OCTOBER = getString(R.string.oct);
-        NOVEMBER = getString(R.string.nov);
-        DECEMBER = getString(R.string.dec);
+        spiner.setAdapter(arrayAdapter);
+        spiner.setOnItemSelectedListener(this);
     }
 
     public void onNothingSelected(AdapterView<?> adapterView) {
@@ -155,21 +140,21 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
     public void calculate(View view) {
         ((ScrollView) findViewById(R.id.scroll)).fullScroll(130);
         ((InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow(view.getWindowToken(), 0);
-        if (this.investmentEdit.getText().toString().isEmpty() || this.rateEdit.getText().toString().isEmpty() || this.time.getText().toString().isEmpty()) {
+        if (investmentEdit.getText().toString().isEmpty() || rateEdit.getText().toString().isEmpty() || time.getText().toString().isEmpty()) {
             Toast.makeText(getApplicationContext(), "Enter Inputs", Toast.LENGTH_SHORT).show();
             return;
         }
-        this.Tenure = Double.parseDouble(this.time.getText().toString());
-        RadioButton radioButton2 = findViewById(this.group.getCheckedRadioButtonId());
-        this.radioButton = radioButton2;
+        Tenure = Double.parseDouble(time.getText().toString());
+        RadioButton radioButton2 = findViewById(group.getCheckedRadioButtonId());
+        radioButton = radioButton2;
         if (radioButton2.getText().toString().equals("year")) {
-            this.Tenure = Double.parseDouble(this.time.getText().toString()) * 12.0d;
+            Tenure = Double.parseDouble(time.getText().toString()) * 12.0d;
         } else {
-            this.Tenure = Double.parseDouble(this.time.getText().toString());
+            Tenure = Double.parseDouble(time.getText().toString());
         }
-        if (this.Tenure <= 360.0d && Double.parseDouble(this.rateEdit.getText().toString()) <= 50.0d) {
+        if (Tenure <= 360.0d && Double.parseDouble(rateEdit.getText().toString()) <= 50.0d) {
             calculation();
-        } else if (this.Tenure > 360.0d) {
+        } else if (Tenure > 360.0d) {
             Toast.makeText(this, "Tenure should be less than 30 years", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "interest rate should be less than 50%", Toast.LENGTH_SHORT).show();
@@ -177,26 +162,26 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
     }
 
     public void share(View view) {
-        if (this.investmentEdit.getText().toString().isEmpty() || this.rateEdit.getText().toString().isEmpty() || this.time.getText().toString().isEmpty()) {
+        if (investmentEdit.getText().toString().isEmpty() || rateEdit.getText().toString().isEmpty() || time.getText().toString().isEmpty()) {
             Toast.makeText(getApplicationContext(), "Enter Inputs", Toast.LENGTH_SHORT).show();
             return;
         }
-        this.Tenure = Double.parseDouble(this.time.getText().toString());
-        RadioButton radioButton2 = (RadioButton) findViewById(this.group.getCheckedRadioButtonId());
-        this.radioButton = radioButton2;
+        Tenure = Double.parseDouble(time.getText().toString());
+        RadioButton radioButton2 = (RadioButton) findViewById(group.getCheckedRadioButtonId());
+        radioButton = radioButton2;
         if (radioButton2.getText().toString().equals("year")) {
-            this.Tenure = Double.parseDouble(this.time.getText().toString()) * 12.0d;
+            Tenure = Double.parseDouble(time.getText().toString()) * 12.0d;
         } else {
-            this.Tenure = Double.parseDouble(this.time.getText().toString());
+            Tenure = Double.parseDouble(time.getText().toString());
         }
-        if (this.Tenure <= 360.0d && Double.parseDouble(this.rateEdit.getText().toString()) <= 50.0d) {
+        if (Tenure <= 360.0d && Double.parseDouble(rateEdit.getText().toString()) <= 50.0d) {
             calculation();
             Intent intent = new Intent("android.intent.action.SEND");
             intent.setType("text/plain");
             intent.putExtra("android.intent.extra.SUBJECT", "EMI- A Calculator app");
-            intent.putExtra("android.intent.extra.TEXT", "Simple & Compound interest Details-\n\ninvestmentEdit Amount : " + this.investmentAmount + "\nTenure : " + this.Tenure + "months\n\nTotal investmentEdit Amount: " + this.totalInvestment + "\ninterest Value: " + this.totalInterest + "\nmaturity Value: " + this.maturityValue + "\n\nCalculate by EMI\n" + this.appLink);
+            intent.putExtra("android.intent.extra.TEXT", "Simple & Compound interest Details-\n\ninvestmentEdit Amount : " + investmentAmount + "\nTenure : " + Tenure + "months\n\nTotal investmentEdit Amount: " + totalInvestment + "\ninterest Value: " + totalInterest + "\nmaturity Value: " + maturityValue + "\n\nCalculate by EMI\n" + appLink);
             startActivity(Intent.createChooser(intent, "Share Using"));
-        } else if (this.Tenure > 360.0d) {
+        } else if (Tenure > 360.0d) {
             Toast.makeText(this, "tenure should be less than 30 years", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "interest rate should be less than 50%", Toast.LENGTH_SHORT).show();
@@ -205,19 +190,19 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
 
     public void pdf(View view) {
         File file;
-        if (this.investmentEdit.getText().toString().isEmpty() || this.rateEdit.getText().toString().isEmpty() || this.time.getText().toString().isEmpty()) {
+        if (investmentEdit.getText().toString().isEmpty() || rateEdit.getText().toString().isEmpty() || time.getText().toString().isEmpty()) {
             Toast.makeText(getApplicationContext(), "Enter Inputs", Toast.LENGTH_SHORT).show();
             return;
         }
-        this.Tenure = Double.parseDouble(this.time.getText().toString());
-        RadioButton radioButton2 = (RadioButton) findViewById(this.group.getCheckedRadioButtonId());
-        this.radioButton = radioButton2;
+        Tenure = Double.parseDouble(time.getText().toString());
+        RadioButton radioButton2 = (RadioButton) findViewById(group.getCheckedRadioButtonId());
+        radioButton = radioButton2;
         if (radioButton2.getText().toString().equals("year")) {
-            this.Tenure = Double.parseDouble(this.time.getText().toString()) * 12.0d;
+            Tenure = Double.parseDouble(time.getText().toString()) * 12.0d;
         } else {
-            this.Tenure = Double.parseDouble(this.time.getText().toString());
+            Tenure = Double.parseDouble(time.getText().toString());
         }
-        if (this.Tenure <= 360.0d && Double.parseDouble(this.rateEdit.getText().toString()) <= 50.0d) {
+        if (Tenure <= 360.0d && Double.parseDouble(rateEdit.getText().toString()) <= 50.0d) {
             calculation();
 
             ActivityCompat.requestPermissions(this, new String[]{"android.permission.WRITE_EXTERNAL_STORAGE","android.permission.READ_EXTERNAL_STORAGE"}, 0);
@@ -225,17 +210,17 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
             Paint paint = new Paint();
             PdfDocument.Page startPage = pdfDocument.startPage(new PdfDocument.PageInfo.Builder(1200, 2010, 1).create());
             Canvas canvas = startPage.getCanvas();
-            canvas.drawBitmap(this.scalebmp, 0.0f, 0.0f, paint);
+            canvas.drawBitmap(scalebmp, 0.0f, 0.0f, paint);
             paint.setTextSize(33.0f);
             paint.setTextAlign(Paint.Align.CENTER);
-            this.radioButton = (RadioButton) findViewById(this.group.getCheckedRadioButtonId());
-            canvas.drawText(this.investmentAmount + " €", 900.0f, 575.0f, paint);
-            canvas.drawText((this.expectedRate * 1200.0d) + " %", 900.0f, 700.0f, paint);
-            canvas.drawText(this.Tenure + "  months", 900.0f, 850.0f, paint);
-            canvas.drawText(this.totalInvestment + " €", 300.0f, 1150.0f, paint);
-            canvas.drawText(this.totalInterest + " €", 900.0f, 1150.0f, paint);
-            canvas.drawText(this.maturityValue + " €", 600.0f, 1450.0f, paint);
-            canvas.drawText(this.choosen, 900.0f, 480.0f, paint);
+            radioButton = (RadioButton) findViewById(group.getCheckedRadioButtonId());
+            canvas.drawText(investmentAmount + " €", 900.0f, 575.0f, paint);
+            canvas.drawText((expectedRate * 1200.0d) + " %", 900.0f, 700.0f, paint);
+            canvas.drawText(Tenure + "  months", 900.0f, 850.0f, paint);
+            canvas.drawText(totalInvestment + " €", 300.0f, 1150.0f, paint);
+            canvas.drawText(totalInterest + " €", 900.0f, 1150.0f, paint);
+            canvas.drawText(maturityValue + " €", 600.0f, 1450.0f, paint);
+            canvas.drawText(choosen, 900.0f, 480.0f, paint);
             pdfDocument.finishPage(startPage);
             if (Build.VERSION.SDK_INT >= 29) {
                 file = new File(getExternalCacheDir(), "/Interest"+ System.currentTimeMillis() + ".pdf");
@@ -251,7 +236,7 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
             if (file.exists()) {
                 CommonMethod.viewPDF(SimpleAndCompoundActivity.this, file);
             }
-        } else if (this.Tenure > 360.0d) {
+        } else if (Tenure > 360.0d) {
             Toast.makeText(this, "tenure should be less than 30 years", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "interest rate should be less than 50%", Toast.LENGTH_SHORT).show();
@@ -259,56 +244,55 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
     }
 
     public void calculation() {
-        this.investmentAmount = Double.parseDouble(this.investmentEdit.getText().toString());
-        this.Tenure = Double.parseDouble(this.time.getText().toString());
-        RadioButton radioButton2 = findViewById(this.group.getCheckedRadioButtonId());
-        this.radioButton = radioButton2;
+        investmentAmount = Double.parseDouble(investmentEdit.getText().toString());
+        Tenure = Double.parseDouble(time.getText().toString());
+        RadioButton radioButton2 = findViewById(group.getCheckedRadioButtonId());
+        radioButton = radioButton2;
         if (radioButton2.getText().toString().equals("year")) {
-            this.Tenure = Double.parseDouble(this.time.getText().toString()) * 12.0d;
+            Tenure = Double.parseDouble(time.getText().toString()) * 12.0d;
         } else {
-            this.Tenure = Double.parseDouble(this.time.getText().toString());
+            Tenure = Double.parseDouble(time.getText().toString());
         }
-        double parseDouble = Double.parseDouble(this.rateEdit.getText().toString());
-        this.expectedRate = parseDouble;
-        this.expectedRate = parseDouble / 1200.0d;
-        if (this.choosen.equals("Compound interest")) {
-            this.maturityValue = this.investmentAmount * Math.pow(this.expectedRate + 1.0d, this.Tenure);
+        double parseDouble = Double.parseDouble(rateEdit.getText().toString());
+        expectedRate = parseDouble / 1200.0d;
+        if (choosen.equals("Compound interest")) {
+            maturityValue = investmentAmount * Math.pow(expectedRate + 1.0d, Tenure);
         } else {
-            double d = this.investmentAmount;
-            this.maturityValue = d + (this.expectedRate * d * this.Tenure);
+            double d = investmentAmount;
+            maturityValue = d + (expectedRate * d * Tenure);
         }
-        double d2 = this.investmentAmount;
-        this.totalInvestment = d2;
-        double d3 = this.maturityValue - d2;
-        this.totalInterest = d3;
+        double d2 = investmentAmount;
+        totalInvestment = d2;
+        double d3 = maturityValue - d2;
+        totalInterest = d3;
         if (((double) ((int) d3)) == d3) {
-            this.interest.setText(String.valueOf((int) d3));
+            interest.setText(String.valueOf((int) d3));
         } else {
-            this.totalInterest = new BigDecimal(this.totalInterest).setScale(1, RoundingMode.HALF_UP).doubleValue();
-            TextView textView = this.interest;
-            textView.setText(this.totalInterest + " €");
+            totalInterest = new BigDecimal(totalInterest).setScale(1, RoundingMode.HALF_UP).doubleValue();
+            TextView textView = interest;
+            textView.setText(totalInterest + " €");
         }
-        double d4 = this.totalInvestment;
+        double d4 = totalInvestment;
         if (((double) ((int) d4)) == d4) {
-            TextView textView2 = this.netAmount;
+            TextView textView2 = netAmount;
             textView2.setText(((int) d4) + " €");
         } else {
-            this.totalInvestment = new BigDecimal(this.totalInvestment).setScale(1, RoundingMode.HALF_UP).doubleValue();
-            TextView textView3 = this.netAmount;
-            textView3.setText(this.totalInvestment + " €");
+            totalInvestment = new BigDecimal(totalInvestment).setScale(1, RoundingMode.HALF_UP).doubleValue();
+            TextView textView3 = netAmount;
+            textView3.setText(totalInvestment + " €");
         }
-        double d5 = this.maturityValue;
+        double d5 = maturityValue;
         if (((double) ((int) d5)) == d5) {
-            this.maturity.setText(String.valueOf((int) d5));
+            maturity.setText(String.valueOf((int) d5));
             return;
         }
-        this.maturityValue = new BigDecimal(this.maturityValue).setScale(1, RoundingMode.HALF_UP).doubleValue();
-        TextView textView4 = this.maturity;
-        textView4.setText(this.maturityValue + " €");
+        maturityValue = new BigDecimal(maturityValue).setScale(1, RoundingMode.HALF_UP).doubleValue();
+        TextView textView4 = maturity;
+        textView4.setText(maturityValue + " €");
     }
 
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long j) {
-        this.choosen = adapterView.getItemAtPosition(i).toString();
+        choosen = adapterView.getItemAtPosition(i).toString();
     }
 
     public void onBackPressed() {
@@ -321,8 +305,6 @@ public class SimpleAndCompoundActivity extends AppCompatActivity implements Adap
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.pro, menu);
-        this.menuDoneItem = menu.findItem(R.id.action_settings);
-        this.menuDoneItem.setVisible(false);
         return true;
     }
 

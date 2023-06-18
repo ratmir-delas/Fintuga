@@ -26,12 +26,12 @@ public class FirebaseAuthenticationActivity extends AppCompatActivity {
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
         setContentView((int) R.layout.activity_firebase_autentication);
-        this.providers = Arrays.asList(new AuthUI.IdpConfig.EmailBuilder().build(), new AuthUI.IdpConfig.GoogleBuilder().build());
+        providers = Arrays.asList(new AuthUI.IdpConfig.GoogleBuilder().build());
         showSignInOptions();
     }
 
     private void showSignInOptions() {
-        startActivityForResult(((AuthUI.SignInIntentBuilder) ((AuthUI.SignInIntentBuilder) ((AuthUI.SignInIntentBuilder) AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(this.providers)).setTheme(R.style.AppTheme)).setLogo(R.mipmap.ic_launcher)).build(), 123);
+        startActivityForResult(((AuthUI.SignInIntentBuilder) ((AuthUI.SignInIntentBuilder) ((AuthUI.SignInIntentBuilder) AuthUI.getInstance().createSignInIntentBuilder().setAvailableProviders(providers)).setTheme(R.style.AppTheme)).setLogo(R.mipmap.ic_launcher)).build(), 123);
     }
 
     @Override

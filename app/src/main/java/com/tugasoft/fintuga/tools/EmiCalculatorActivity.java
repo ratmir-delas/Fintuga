@@ -26,6 +26,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -272,6 +273,7 @@ public class EmiCalculatorActivity extends AppCompatActivity implements Statemen
         }
         if (this.period <= 360.0d && Double.parseDouble(this.interestAmountEditText.getText().toString()) <= 50.0d) {
             calculation();
+            showResult();
         } else if (this.period > 360.0d) {
             Toast.makeText(this, "tenure should be less than 30 years", Toast.LENGTH_SHORT).show();
         } else {
@@ -279,6 +281,12 @@ public class EmiCalculatorActivity extends AppCompatActivity implements Statemen
         }
     }
 
+    private void showResult() {
+        LinearLayout result = findViewById(R.id.result_layout);
+        result.setVisibility(View.VISIBLE);
+        ScrollView scrollView = findViewById(R.id.scroll);
+        scrollView.post(() -> scrollView.fullScroll(ScrollView.FOCUS_DOWN));
+    }
 
     public void calculation() {
         this.loanamount = Double.parseDouble(this.principalAmountTextEdit.getText().toString());
